@@ -160,7 +160,6 @@ function RulesInfo() {
                         <ListItem>This applies to both attack and defense for a maximum of 4 factions/team. A total of maximum -4 pts for forfeiting and maximum +6 points for `winning`.</ListItem>
                     </UnorderedList>
                 </ListItem>
-
                 <ListItem>
                     Lag:
                     <UnorderedList mt={1} pl={5}>
