@@ -248,7 +248,9 @@ function RulesInfo() {
                 </ListItem>
 
             </OrderedList>
+            <Center>
             <Text mt={5} mb={2} fontSize="lg" fontWeight="bold">Have a good fucking time!</Text>
+            </Center>
         </Box>
     );
 }

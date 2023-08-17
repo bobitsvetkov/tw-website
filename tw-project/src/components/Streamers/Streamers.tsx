@@ -1,5 +1,5 @@
-import { Box, Center, Heading, Image, Text, Grid, LinkBox, LinkOverlay } from "@chakra-ui/react";
-
+import { Box, Image, Text, Grid, LinkBox, LinkOverlay, Link } from "@chakra-ui/react";
+import logoImage from '../assets/logoImage.png'
 function Streamers() {
     const streamers = [
         {
@@ -32,17 +32,21 @@ function Streamers() {
             image: "https://yt3.googleusercontent.com/Solcuu4ZuAfaa39E090xSqc8p4D0Ip7nAio_Z7CyZpbbzx8-0GsOISXp5AiYPtAVHL2Ci3VIEQ=s176-c-k-c0x00ffffff-no-rj",
             description: "Marine Corps Veteran Goin to school for Game development. Join me for great gaming content. I normally play Total war Rome 2 & NCAA 14, but I play multiple different and join me during my gaming marathons and suggest new games for me to try."
         },
+        {
+            name: "arcticgollem",
+            image: "https://static-cdn.jtvnw.net/jtv_user_pictures/5c76b8fc-624c-4d14-9599-afe89085de89-profile_image-70x70.png",
+            description: "20 Years Old looking to play some good old Rome 2!"
+        },
     ];
     return (
-        <Box>
-            <Center mb={6}>
-                <Heading>Your Game Logo Here</Heading>
-            </Center>
-
+        <Box w="107.7%" h="200px">
+            <Link href="/">
+                <Image src={logoImage} alt="Rome 2 Total War Logo" w="100%" h="100%" objectFit="cover" />
+            </Link>
             <Grid templateColumns="repeat(3, 1fr)" gap={6}>
                 {streamers.map((streamer, index) => (
                     <LinkBox key={index} as="article" p={4} border="1px solid" borderColor="gray.200" borderRadius="md" textAlign="center">
-                        <Image src={streamer.image} alt={streamer.name} boxSize="300px" mx="auto" />
+                        <Image src={streamer.image} alt={streamer.name} boxSize="200px" mx="auto" />
                         <Text mt={2}>{streamer.description}</Text>
                         <LinkOverlay href={`https://www.twitch.tv/${streamer.name}`} isExternal>
                             Watch on Twitch
