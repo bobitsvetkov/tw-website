@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Image, VStack, Text, Grid } from "@chakra-ui/react";
+import { Box, Image, Text, Grid } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import logoImage from '../assets/logoImage.png'
 
