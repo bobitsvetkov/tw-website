@@ -26,9 +26,9 @@ function Champions() {
         },
         {
             season: "Season 4",
-            winner: "Grass Touchers (WhosMrBubbles and xAizenTTV, Sub: Saturate)",
-            runnerUp: "Parthia's Finest (Kirky and Donald, Sub: BigBees)",
-            mostPoints: "SweetTeaLovers (Moist Blueberry and msheat, Sub: captain: 2.0 PPG)",
+            winner: "Parthia's Finest (Kirky and jbarbs, Sub: Donald)",
+            runnerUp: "Gorilla Warfare(Hyena and Dare, Sub: Boles)",
+            mostPoints: "Gorilla Warfare (Hyena and Dare, Sub: Boles: 3.8 PPG)",
             thirdPlace: "Champions of Roma (MO and Lemerex)",
             topKD:"1. jbarbs (1.46) 2. Hyena (1.36) 3. Kirky (1.22)",
             mostChevrons: "1. Hyena (10.9) 2. jbarbs (10.7) 3. Kirky (9.9)"
