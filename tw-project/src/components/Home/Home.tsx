@@ -91,7 +91,7 @@ function Home() {
                     </Box>
                 </Link>
 
-                <Link to="/events">
+                <a href="https://docs.google.com/spreadsheets/d/1SZISO_t2vM2TPl4i6PPdHs2WF_A5AgBNM_dhXBPe-78/edit#gid=160152427" target="_blank" rel="noopener noreferrer">
                     <Box
                         p={4}
                         borderRadius="md"
@@ -102,10 +102,10 @@ function Home() {
                         transition="0.3s"
                         _hover={{ bg: "gray.600" }}
                     >
-                        <Image src="https://via.placeholder.com/300" alt="Events" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Upcoming Events</Text>
+                        <Image src="https://i.ytimg.com/vi/Kqvff-tWDbI/maxresdefault.jpg" alt="Statistics" boxSize="300px" mx="auto" mb={4} />
+                        <Text mt={2}>TWLS Standings</Text>
                     </Box>
-                </Link>
+                </a>
 
                 <a href="https://discord.gg/K9GU6VzrmK" target="_blank" rel="noopener noreferrer">
                     <Box
