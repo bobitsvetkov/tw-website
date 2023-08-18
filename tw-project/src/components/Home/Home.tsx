@@ -1,5 +1,6 @@
-import { Box, Image, Text, Grid } from "@chakra-ui/react";
+import { Box, Image, Text, Grid, Icon } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { FaHeart, FaPaypal } from 'react-icons/fa';
 import logoImage from '../assets/logoImage.png'
 
 function Home() {
@@ -65,6 +66,19 @@ function Home() {
                         <Text mt={2}>Game Guides & Tips</Text>
                     </Box>
                 </Link>
+                <a href="YOUR_PAYPAL_LINK_HERE" target="_blank" rel="noopener noreferrer">
+                    <Box p={4} border="1px solid" borderColor="gray.200" borderRadius="md" textAlign="center" bg="gray.700" color="white" _hover={{ bg: "gray.600" }}>
+                        <Icon as={FaHeart} w={10} h={10} mb={2} />
+                        <Text fontWeight="bold" fontSize="xl" mb={2}>Support Us</Text>
+                        <Text mb={2}>Help support the continuous development of this site. Your generosity keeps us going!</Text>
+
+                        {/* Meme content */}
+                        <Text mt={2} fontStyle="italic">"In Bulgaria, we have a saying, I would rather throw up blood than give refunds, so you better not ask for refunds! 😆"</Text>
+
+                        <Icon as={FaPaypal} w={8} h={8} mt={4} />
+                        <Text mt={2}>Donate with PayPal</Text>
+                    </Box>
+                </a>
             </Grid>
         </>
     );
