@@ -6,6 +6,7 @@ import Champions from './components/Champions/Champions';
 import Donations from './components/Donations/Donations';
 import Youtubers from './components/Youtubers/Youtubers';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import Prizes from './components/Prize/Prize';
 
 const theme = extendTheme({
   styles: {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/rules-info" element={<RulesInfo />} />
         <Route path="/champions" element={<Champions />} />
         <Route path="/donate" element={<Donations />} />
+        <Route path="/prizes" element={<Prizes />} />
       </Routes>
     </Router>
     </ChakraProvider>

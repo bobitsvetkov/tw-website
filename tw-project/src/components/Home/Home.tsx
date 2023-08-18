@@ -10,7 +10,11 @@ function Home() {
                 <Image src={logoImage} alt="Rome 2 Total War Logo" w="100%" h="100%" objectFit="cover" />
             </Box>
 
-            <Grid templateColumns="repeat(5, 1fr)" gap={6} mt={6}>
+            <Grid
+                templateColumns={{ base: "1fr", md: "repeat(3, 1fr)", lg: "repeat(5, 1fr)" }}
+                gap={6}
+                mt={6}
+            >
                 <Link to="/champions">
                     <Box
                         p={4}
@@ -123,7 +127,7 @@ function Home() {
                     </Box>
                 </a>
 
-                <Link to="/guides">
+                <Link to="/prizes">
                     <Box
                         p={4}
                         borderRadius="md"
@@ -134,8 +138,8 @@ function Home() {
                         transition="0.3s"
                         _hover={{ bg: "gray.600" }}
                     >
-                        <Image src="https://via.placeholder.com/300" alt="Guides" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Game Guides & Tips</Text>
+                        <Image src="https://media.istockphoto.com/id/925377622/photo/winner-championship-1-3.jpg?s=612x612&w=0&k=20&c=oHlfWIuuO7rD14pgatMr_BS-uhPTMV4bOmPhC0Xt3oY=" alt="Prizes" boxSize="300px" mx="auto" mb={4} />
+                        <Text mt={2}>Prizes and Awards</Text>
                     </Box>
                 </Link>
 
