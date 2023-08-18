@@ -50,17 +50,28 @@ If you enjoy funny and personal commentary during streams(and some failures) thi
         },
     ];
     return (
-        <Box>
+        <Box bg="gray.800" minHeight="100vh" color="white">
             <Center mb={6}>
-                <Heading>Check out our Youtubers!</Heading>
+                <Heading color="white">Check out our Youtubers!</Heading>
             </Center>
 
-            <Grid templateColumns="repeat(3, 1fr)" gap={6}>
+            <Grid templateColumns="repeat(3, 1fr)" gap={6} mt={6} p={4}>
                 {youtubers.map((youtuber, index) => (
-                    <LinkBox key={index} as="article" p={4} border="1px solid" borderColor="gray.200" borderRadius="md" textAlign="center">
-                        <Image src={youtuber.image} alt={youtuber.name} boxSize="300px" mx="auto" />
-                        <Text mt={2}>{youtuber.description}</Text>
-                        <LinkOverlay href={`https://www.youtube.com/${youtuber.name}`} isExternal>
+                    <LinkBox
+                        key={index}
+                        as="article"
+                        p={4}
+                        borderRadius="md"
+                        textAlign="center"
+                        bg="gray.700"
+                        color="white"
+                        boxShadow="lg"
+                        transition="0.3s"
+                        _hover={{ boxShadow: 'xl', transform: 'scale(1.05)' }}
+                    >
+                        <Image src={youtuber.image} alt={youtuber.name} boxSize="300px" mx="auto" mb={4} />
+                        <Text mb={4}>{youtuber.description}</Text>
+                        <LinkOverlay href={`https://www.youtube.com/${youtuber.name}`} isExternal fontWeight="bold">
                             Watch on YouTube
                         </LinkOverlay>
                     </LinkBox>
