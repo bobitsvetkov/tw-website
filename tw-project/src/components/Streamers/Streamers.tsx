@@ -1,4 +1,4 @@
-import { Box, Image, Text, Grid, LinkBox, LinkOverlay, Link } from "@chakra-ui/react";
+import { Box, Image, Text, Grid, LinkBox, LinkOverlay, Link, Center, Heading } from "@chakra-ui/react";
 import logoImage from '../assets/logoImage.png'
 function Streamers() {
     const streamers = [
@@ -40,34 +40,33 @@ function Streamers() {
     ];
 
     return (
-        <Box bg="gray.800" minHeight="100vh">
-            <Box w="107.7%" h="200px">
-                <Link href="/">
-                    <Image src={logoImage} alt="Rome 2 Total War Logo" w="100%" h="100%" objectFit="cover" />
-                </Link>
-                <Grid templateColumns="repeat(3, 1fr)" gap={6} mt={6}>
-                    {streamers.map((streamer, index) => (
-                        <LinkBox
-                            key={index}
-                            as="article"
-                            p={4}
-                            borderRadius="md"
-                            textAlign="center"
-                            bg="gray.700"
-                            color="white"
-                            boxShadow="lg"
-                            transition="0.3s"
-                            _hover={{ boxShadow: 'xl', transform: 'scale(1.05)' }}
-                        >
-                            <Image src={streamer.image} alt={streamer.name} boxSize="200px" mx="auto" mb={4} />
-                            <Text mb={4}>{streamer.description}</Text>
-                            <LinkOverlay href={`https://www.twitch.tv/${streamer.name}`} isExternal fontWeight="bold">
-                                Watch on Twitch
-                            </LinkOverlay>
-                        </LinkBox>
-                    ))}
-                </Grid>
-            </Box>
+        <Box bg="gray.800" minHeight="100vh" color="white" p={4}>
+            <Center mb={6}>
+                <Heading color="white">Meet our Streamers!</Heading>
+            </Center>
+
+            <Grid templateColumns="repeat(3, 1fr)" gap={6}>
+                {streamers.map((streamer, index) => (
+                    <LinkBox
+                        key={index}
+                        as="article"
+                        p={4}
+                        borderRadius="md"
+                        textAlign="center"
+                        bg="gray.700"
+                        color="white"
+                        boxShadow="lg"
+                        transition="0.3s"
+                        _hover={{ boxShadow: 'xl', transform: 'scale(1.05)' }}
+                    >
+                        <Image src={streamer.image} alt={streamer.name} boxSize="200px" mx="auto" mb={4} />
+                        <Text mb={4}>{streamer.description}</Text>
+                        <LinkOverlay href={`https://www.twitch.tv/${streamer.name}`} isExternal fontWeight="bold">
+                            Watch on Twitch
+                        </LinkOverlay>
+                    </LinkBox>
+                ))}
+            </Grid>
         </Box>
     );
 }
