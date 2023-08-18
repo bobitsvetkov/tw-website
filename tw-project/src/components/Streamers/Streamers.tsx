@@ -1,5 +1,4 @@
-import { Box, Image, Text, Grid, LinkBox, LinkOverlay, Link, Center, Heading } from "@chakra-ui/react";
-import logoImage from '../assets/logoImage.png'
+import { Box, Image, Text, Grid, LinkBox, LinkOverlay, Center, Heading } from "@chakra-ui/react";
 function Streamers() {
     const streamers = [
         {
