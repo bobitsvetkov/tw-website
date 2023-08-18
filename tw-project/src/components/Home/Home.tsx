@@ -31,12 +31,12 @@ function Home() {
                     </Box>
                 </Link>
 
-                <Link to="/merch">
+                <a href="https://streamlabs.com/marketableskills/merch" target="_blank" rel="noopener noreferrer">
                     <Box p={4} border="1px solid" borderColor="gray.200" borderRadius="md" textAlign="center">
                         <Image src="https://panels.twitch.tv/panel-659960022-image-944d9733-f922-4ed0-96c6-5dcc25da5ad3" alt="Merch" boxSize="300px" mx="auto" />
                         <Text mt={2}>Get Official Merchandise</Text>
                     </Box>
-                </Link>
+                </a>
 
                 <Link to="/youtubers">
                     <Box p={4} border="1px solid" borderColor="gray.200" borderRadius="md" textAlign="center">
