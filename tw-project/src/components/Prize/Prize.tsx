@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Text, List, ListItem, Flex } from "@chakra-ui/react";
+import { Box, Heading, Text, List, ListItem, Flex } from "@chakra-ui/react";
 import { useEffect } from 'react';
 
 function Prizes() {
