@@ -1,6 +1,5 @@
-import { Box, Center, Text, SimpleGrid, useColorModeValue, Icon, Image } from "@chakra-ui/react";
+import { Box, Center, Text, SimpleGrid, Icon, Heading} from "@chakra-ui/react";
 import { FaTrophy } from 'react-icons/fa';
-import logoImage from '../assets/logoImage.png'
 
 function Champions() {
     const seasons = [
@@ -26,25 +25,37 @@ function Champions() {
             season: "Season 4",
             winner: "Grass Touchers (WhosMrBubbles and xAizenTTV, Sub: Saturate)",
             runnerUp: "Parthia's Finest (Kirky and Donald, Sub: BigBees)",
-            mostPoints: "SweetTeaLovers (Moist Blueberry and msheat, Sub: captain: 2.0 PPG)"
+            mostPoints: "SweetTeaLovers (Moist Blueberry and msheat, Sub: captain: 2.0 PPG)",
+            thirdPlace: "Champions of Roma (MO and Lemerex)",
+            topKD:"1. jbarbs (1.46) 2. Hyena (1.36) 3. Kirky (1.22)",
+            mostChevrons: "1. Hyena (10.9) 2. jbarbs (10.7) 3. Kirky (9.9)"
         },
         {
             season: "Season 5",
             winner: "Gorilla Warfare (Hyena and Dare, Sub: jjj)",
             runnerUp: "Bubble Bees (BigBees and WhosMrBubbles, Sub: Saturate)",
-            mostPoints: "Tie (Donald's Legion and Bubble Bees: 3.4 PPG)"
+            mostPoints: "Tie (Donald's Legion and Bubble Bees: 3.4 PPG)",
+            thirdPlace: "Donald's Legion (Donald and The Centurion, Sub: Everos)",
+            topKD: "1. BigBees (1.33) 2. Donald (1.26) 3. MO (1.25)",
+            mostChevrons: "1. MO and Nungle (10.0) 2. FightMe and Donald (9.92) 3. BigBees (9.73)"
         },
         {
             season: "Season 6",
             winner: "Rising Kings (FightMe and JackJack, Sub: Rooibos)",
             runnerUp: "Camel Riders (MarketableSkills and Costanza, Sub: Androo02)",
-            mostPoints: "Perkele (Mia and Hagehi, Sub: AgentPanda: 3.8 PPG)"
+            mostPoints: "Perkele (Mia and Hagehi, Sub: AgentPanda: 3.8 PPG)",
+            thirdPlace: "Perkele (Mia and Hagehi, Sub: AgentPanda)",
+            topKD: "1. Bubinni (1.28) 2. Mia (1.27) 3. Donald (1.18)",
+            mostChevrons: "1. Hoax(9.88) 2. Nungle(9.45) 3. rifou(9.29)"
         },
         {
             season: "Season 7",
             winner: "Rice Enjoyers (Nice-Rice and titledsum, Sub: Anthony Duran)",
             runnerUp: "Gorilla Tactics (Hyena and Bubinni, Sub: jjj)",
-            mostPoints: "Comrades in Arms (Chairman Mao and boopathi: 4.2 PPG)"
+            mostPoints: "Comrades in Arms (Chairman Mao and boopathi: 4.2 PPG)",
+            thirdPlace: "Peppa Pig Fan Club (Pedro and Nungle)",
+            topKD: "1. Bubinni (1.36) 2. Hyena (1.21) 3. jbarbs (1.20)",
+            mostChevrons: "1. rifou (10.67) 2. Bubinni (10.55) 3. Rogal Dorn (10.00)"
         },
         // {
         //     season: "Season 8",
@@ -53,14 +64,12 @@ function Champions() {
         //     mostPoints: "SweetTeaLovers (Moist Blueberry and msheat, Sub: captain: 2.0 PPG)"
         // },
     ];
-    const cardBg = useColorModeValue("linear(to-br, teal.500, green.300)", "gray.700");
-    const cardColor = useColorModeValue("white", "white");
+    const cardBg = "gray.700"; // Lighter shade of gray for the card
+    const cardColor = "white"; // White text color
     return (
-        <Box bg="gray.100" minHeight="100vh" p={6}>
+        <Box bg="gray.900" minHeight="100vh" p={6}>  {/* Darker shade of gray for the background */}
             <Center mb={6}>
-                <Box w="107.7%" h="300px" overflow="hidden">
-                    <Image src={logoImage} alt="Rome 2 Total War Logo" w="100%" h="100%" objectFit="cover" />
-                </Box>
+                <Heading color={cardColor}>Check Out The Top Teams!</Heading>
             </Center>
             <SimpleGrid columns={3} spacing={10}>
                 {seasons.map((s, index) => (
@@ -75,12 +84,15 @@ function Champions() {
                         transition="all 0.3s"
                     >
                         <Center mb={4}>
-                            <Icon as={FaTrophy} w={10} h={10} />
+                            <Icon as={FaTrophy} w={10} h={10} color={cardColor} />
                         </Center>
                         <Text fontWeight="bold" fontSize="xl" mb={2} textAlign="center">{s.season}</Text>
                         <Text fontWeight="semibold">Winner: {s.winner}</Text>
                         <Text mt={2}>Runner-up: {s.runnerUp}</Text>
                         <Text mt={2}>Most Points in Group Stage: {s.mostPoints}</Text>
+                        {s.thirdPlace && <Text mt={2}>Best Loser (Third Place): {s.thirdPlace}</Text>}
+                        {s.topKD && <Text mt={2}>Best KD ratio: {s.topKD}</Text>}
+                        {s.mostChevrons && <Text mt={2}>Most Chevrons per game: {s.mostChevrons}</Text>}
                     </Box>
                 ))}
             </SimpleGrid>
