@@ -1,7 +1,10 @@
 import { Box, Center, Text, SimpleGrid, Icon, Heading} from "@chakra-ui/react";
 import { FaTrophy } from 'react-icons/fa';
-
+import { useEffect } from 'react';
 function Champions() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const seasons = [
         {
             season: "Season 1",

@@ -1,5 +1,9 @@
 import { Box, Image, Text, Grid, LinkBox, LinkOverlay, Center, Heading } from "@chakra-ui/react";
+import { useEffect } from 'react';
 function Streamers() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const streamers = [
         {
             name: "MarketableSkills",

@@ -1,6 +1,9 @@
 import { Box, Center, Heading, Image, Text, Grid, LinkBox, LinkOverlay } from "@chakra-ui/react";
-
+import { useEffect } from 'react';
 function Youtubers() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const youtubers  = [
         {
             name: "@marketableskills5374",

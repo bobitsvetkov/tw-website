@@ -1,6 +1,9 @@
 import { Box, Center, Heading, Text, ListItem, OrderedList, UnorderedList } from "@chakra-ui/react";
-
+import { useEffect } from 'react';
 function RulesInfo() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <Box p={6}>
             <Center mb={6}>
