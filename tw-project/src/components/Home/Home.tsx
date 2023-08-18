@@ -52,12 +52,12 @@ function Home() {
                     </Box>
                 </Link>
 
-                <Link to="/community">
+                <a href="https://discord.gg/K9GU6VzrmK" target="_blank" rel="noopener noreferrer">
                     <Box p={4} border="1px solid" borderColor="gray.200" borderRadius="md" textAlign="center">
                         <Image src="https://images-eds-ssl.xboxlive.com/image?url=Q_rwcVSTCIytJ0KOzcjWTYl.n38D8jlKWXJx7NRJmQKBAEDCgtTAQ0JS02UoaiwRCHTTX1RAopljdoYpOaNfVf5nBNvbwGfyR5n4DAs0DsOwxSO9puiT_GgKqinHT8HsW8VYeiiuU1IG3jY69EhnsQ--&format=source" alt="Community" boxSize="300px" mx="auto" />
                         <Text mt={2}>Join our Community</Text>
                     </Box>
-                </Link>
+                </a>
 
                 <Link to="/guides">
                     <Box p={4} border="1px solid" borderColor="gray.200" borderRadius="md" textAlign="center">
