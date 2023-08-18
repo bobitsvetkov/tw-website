@@ -1,5 +1,6 @@
-import { Box, Center, Heading, Text, SimpleGrid, useColorModeValue } from "@chakra-ui/react";
-
+import { Box, Center, Text, SimpleGrid, useColorModeValue, Icon, Image } from "@chakra-ui/react";
+import { FaTrophy } from 'react-icons/fa';
+import logoImage from '../assets/logoImage.png'
 
 function Champions() {
     const seasons = [
@@ -52,18 +53,32 @@ function Champions() {
         //     mostPoints: "SweetTeaLovers (Moist Blueberry and msheat, Sub: captain: 2.0 PPG)"
         // },
     ];
-    const cardBg = useColorModeValue("white", "gray.700");
-    const cardColor = useColorModeValue("gray.800", "white");
+    const cardBg = useColorModeValue("linear(to-br, teal.500, green.300)", "gray.700");
+    const cardColor = useColorModeValue("white", "white");
     return (
         <Box bg="gray.100" minHeight="100vh" p={6}>
             <Center mb={6}>
-                <Heading>Your Game Logo Here</Heading>
+                <Box w="107.7%" h="300px" overflow="hidden">
+                    <Image src={logoImage} alt="Rome 2 Total War Logo" w="100%" h="100%" objectFit="cover" />
+                </Box>
             </Center>
-            <SimpleGrid columns={3} spacing={6}>
+            <SimpleGrid columns={3} spacing={10}>
                 {seasons.map((s, index) => (
-                    <Box key={index} bg={cardBg} color={cardColor} p={4} borderRadius="md" boxShadow="lg">
-                        <Text fontWeight="bold" fontSize="xl" mb={2}>{s.season}</Text>
-                        <Text>Winner: {s.winner}</Text>
+                    <Box
+                        key={index}
+                        bg={cardBg}
+                        color={cardColor}
+                        p={6}
+                        borderRadius="md"
+                        boxShadow="2xl"
+                        _hover={{ transform: 'scale(1.05)', boxShadow: 'xl' }}
+                        transition="all 0.3s"
+                    >
+                        <Center mb={4}>
+                            <Icon as={FaTrophy} w={10} h={10} />
+                        </Center>
+                        <Text fontWeight="bold" fontSize="xl" mb={2} textAlign="center">{s.season}</Text>
+                        <Text fontWeight="semibold">Winner: {s.winner}</Text>
                         <Text mt={2}>Runner-up: {s.runnerUp}</Text>
                         <Text mt={2}>Most Points in Group Stage: {s.mostPoints}</Text>
                     </Box>
