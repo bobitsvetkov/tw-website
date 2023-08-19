@@ -10,7 +10,7 @@ function RulesInfo() {
                 <Heading>TOTAL WAR LEAGUE: SIEGE RULES</Heading>
             </Center>
 
-            <Text mb={5}>Basic rules:</Text>
+            <Text mb={5} fontWeight="bold">Basic rules:</Text>
             <UnorderedList mb={5} pl={5}>
                 <ListItem>Settlement size: Variable</ListItem>
                 <ListItem>Funds: Large</ListItem>
