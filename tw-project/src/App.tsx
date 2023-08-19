@@ -7,6 +7,7 @@ import Youtubers from './components/Youtubers/Youtubers';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Prizes from './components/Prize/Prize';
 import Footer from './components/Footer/Footer';
+import VideoCard from './components/Videos/Youtube';
 
 const theme = extendTheme({
   styles: {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/rules-info" element={<RulesInfo />} />
         <Route path="/champions" element={<Champions />} />
         <Route path="/prizes" element={<Prizes />} />
+        <Route path="/guides" element={< VideoCard />} />
       </Routes>
     </Router>
       <Footer />

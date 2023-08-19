@@ -185,6 +185,21 @@ function Home() {
                         <Text mt={2}>Donate to MarketableSkills with Streamlabs</Text>
                     </Box>
                 </a>
+                <Link to="/guides">
+                    <Box
+                        p={4}
+                        borderRadius="md"
+                        textAlign="center"
+                        bg="gray.700"
+                        color="white"
+                        boxShadow="lg"
+                        transition="0.3s"
+                        _hover={{ bg: "gray.600" }}
+                    >
+                        <Image src="https://content.totalwar.com/total-war/com.totalwar.www2019/uploads/2019/03/11103129/carthage-1024x576.jpg" alt="Youtubers" boxSize="300px" mx="auto" mb={4} />
+                        <Text mt={2}>Rome 2 Guides</Text>
+                    </Box>
+                </Link>
             </Grid>
         </>
     );

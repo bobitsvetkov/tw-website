@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Text, ListItem, OrderedList, UnorderedList } from "@chakra-ui/react";
+import { Box, Center, Heading, Text, ListItem, OrderedList, UnorderedList, Divider } from "@chakra-ui/react";
 import { useEffect } from 'react';
 function RulesInfo() {
     useEffect(() => {
@@ -10,8 +10,8 @@ function RulesInfo() {
                 <Heading>TOTAL WAR LEAGUE: SIEGE RULES</Heading>
             </Center>
 
-            <Text mb={5} fontWeight="bold">Basic rules:</Text>
-            <UnorderedList mb={5} pl={5}>
+            <Text fontSize="xl" mb={4} fontWeight="semibold">Basic rules:</Text>
+            <UnorderedList mb={6} spacing={2} pl={5}>
                 <ListItem>Settlement size: Variable</ListItem>
                 <ListItem>Funds: Large</ListItem>
                 <ListItem>Season: Spring</ListItem>
@@ -21,17 +21,17 @@ function RulesInfo() {
                 <ListItem>Time Limit: 60 Minutes</ListItem>
                 <ListItem>Unit Size: Ultra</ListItem>
             </UnorderedList>
-
-            <OrderedList mb={5} spacing={3}>
+            <Divider mb={5} />
+            <OrderedList spacing={6} pl={5}>
                 <ListItem>
-                    Objective:
+                    <Text fontSize="lg" fontWeight="semibold">Objective:</Text>
                     <Text mt={1}>
                         Acquire points to win, team success is based on points. Points are collected by winning matches, by faction selection and by participation. Teams can also lose points.
                     </Text>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Max unit types:
+                    <Text fontSize="lg" fontWeight="semibold">Max unit types:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>1 artillery piece per player on attack. Max 1 of each artillery type (ballista/onager and scorpion) per team on attack. On defense, only 1 artillery can be brought per team (only scorpions may be used inside the settlement).</ListItem>
                         <ListItem>2 pikes per player</ListItem>
@@ -40,9 +40,10 @@ function RulesInfo() {
                         <ListItem>2 eles/chariots per team</ListItem>
                     </UnorderedList>
                 </ListItem>
+                <Divider my={4} />
 
                 <ListItem>
-                    No pike stacking:
+                    <Text fontSize="lg" fontWeight="semibold">No pike stacking:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Pike units may not be arranged inside another unit or within the length of the deployed pike.</ListItem>
                         <ListItem>If, intentional or unintentional, pike stacking is observed during league play it must be remedied immediately. Failure to do so will result in a loss or penalty.</ListItem>
