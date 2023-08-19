@@ -2,6 +2,7 @@ import { Box, Image, Text, Grid, Icon } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { FaHeart, FaPaypal } from 'react-icons/fa';
 import logoImage from '../assets/logoImage.png'
+import { FaBroadcastTower } from "react-icons/fa";
 
 function Home() {
     return (
@@ -155,11 +156,31 @@ function Home() {
                         _hover={{ bg: "gray.600" }}
                     >
                         <Icon as={FaHeart} w={10} h={10} mb={2} />
-                        <Text fontWeight="bold" fontSize="xl" mb={2}>Support Us</Text>
+                        <Text fontWeight="bold" fontSize="xl" mb={2}>Support the Creator of the Site!</Text>
                         <Text mb={2}>Help support the continuous development of this site. Your generosity keeps us going!</Text>
                         <Text mt={2} fontStyle="italic">"In Bulgaria, we have a saying, I would rather throw up blood than give refunds, so you better not ask for refunds! 😆"</Text>
                         <Icon as={FaPaypal} w={8} h={8} mt={4} />
                         <Text mt={2}>Donate with PayPal</Text>
+                    </Box>
+                </a>
+
+                <a href="https://streamlabs.com/marketableskills/tip" target="_blank" rel="noopener noreferrer">
+                    <Box
+                        p={4}
+                        borderRadius="md"
+                        h="337px"
+                        textAlign="center"
+                        bg="gray.700"
+                        color="white"
+                        boxShadow="lg"
+                        transition="0.3s"
+                        _hover={{ bg: "gray.600" }}
+                    >
+                        <Icon as={FaBroadcastTower} w={10} h={10} mb={2} /> {/* This is just a placeholder icon. You can use any appropriate icon for the streamer. */}
+                        <Text fontWeight="bold" fontSize="xl" mb={2}>Support MarketableSkills!</Text>
+                        <Text mb={2}>Love the content? Show your appreciation and keep the streams coming!</Text>
+                        <Icon as={FaPaypal} w={8} h={8} mt={4} />
+                        <Text mt={2}>Donate to the Streamer with Streamlabs</Text>
                     </Box>
                 </a>
             </Grid>

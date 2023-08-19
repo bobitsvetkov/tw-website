@@ -21,6 +21,11 @@ function Youtubers() {
             description: "Hello there. I am an avid Total War player, but I will stream other stuff as well. I might talk a bit about politics/economy/education etc. Still most of my content will probably be focused on Total War."
         },
         {
+            name: "@HyenA806",
+            image: "https://yt3.googleusercontent.com/ytc/AOPolaTmsNfBgGG9Ml166UmJ9jhrTWUhooF8HGfaQ55Sww=s176-c-k-c0x00ffffff-no-rj",
+            description: "Eternal Meme Lord of TWLS"
+        },
+        {
             name: "@PopeJohnPaul",
             image: "https://yt3.googleusercontent.com/ytc/AOPolaQKizJaGonjydkTASk8GU_lbqcwif_sVVSkLsP98Q=s176-c-k-c0x00ffffff-no-rj",
             description: "Diving deep into the mechanics of Total War games and sharing my insights."

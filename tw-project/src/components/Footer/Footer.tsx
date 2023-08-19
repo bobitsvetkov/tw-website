@@ -29,7 +29,7 @@ function Footer() {
 
                     <Flex align="center" mt={2}>
                         <Icon as={FaRegCopy} w={4} h={4} mr={2} />  {/* Copyright icon */}
-                        <Text>{currentYear} Borislav Tsvetkov. All Rights Reserved.</Text>
+                        <Text>{currentYear} MarketableSkills. All Rights Reserved.</Text>
                     </Flex>
                 </Flex>
             </Center>
