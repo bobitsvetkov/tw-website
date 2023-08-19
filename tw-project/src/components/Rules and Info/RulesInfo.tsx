@@ -49,9 +49,9 @@ function RulesInfo() {
                         <ListItem>If, intentional or unintentional, pike stacking is observed during league play it must be remedied immediately. Failure to do so will result in a loss or penalty.</ListItem>
                     </UnorderedList>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Pull Through:
+                    <Text fontSize="lg" fontWeight="semibold">Pull Through:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Pull through infractions: first instance - penalty at mods discretion, second instance -1, third occurrence results in forfeit for that battle.</ListItem>
                         <ListItem>Units pulling or pushing through other units is not permitted.</ListItem>
@@ -63,9 +63,9 @@ function RulesInfo() {
                         <ListItem>Pulling through intentionally to win despite the penalties is a forfeit.</ListItem>
                     </UnorderedList>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    No camping the VP:
+                    <Text fontSize="lg" fontWeight="semibold">No camping the VP:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Victory point camping is placing all of/a majority of one's units at the choke points leading to the final capture point on the map.</ListItem>
                         <ListItem>Finale choke points are map specific, clarification can be sought before games. There will be videos made showing the final choke points for each map.</ListItem>
@@ -75,13 +75,13 @@ function RulesInfo() {
                         <ListItem>VP Camping rules do not apply to small size maps.</ListItem>
                     </UnorderedList>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    NO deployables. If any are on the battlefield, it is a disqualification.
+                    <Text fontSize="lg" fontWeight="semibold">No Deployables: If any are on the battlefield, it is a disqualification.</Text>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Other Exploits:
+                    <Text fontSize="lg" fontWeight="semibold">Other Exploits:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>No siege towers, tortoises, galleys, or battering rams inside the settlement.</ListItem>
                         <ListItem>No Beserk Elephant exploit.</ListItem>
@@ -91,9 +91,10 @@ function RulesInfo() {
                         <ListItem>No other exploits. Ask a moderator if you are unsure if something is an exploit.</ListItem>
                     </UnorderedList>
                 </ListItem>
+                <Divider my={4} />
 
                 <ListItem>
-                    Artillery:
+                    <Text fontSize="lg" fontWeight="semibold">Artillery:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>One artillery piece per player on attack (only one ballista/onager per team) Only one artillery per team is allowed on defense.</ListItem>
                         <ListItem>Shotgunning (shooting enemies at close range) artillery is allowed.</ListItem>
@@ -101,20 +102,20 @@ function RulesInfo() {
                         <ListItem>NO wall artillery.</ListItem>
                     </UnorderedList>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Grand Campaign factions ONLY:
+                    <Text fontSize="lg" fontWeight="semibold">Grand Campaign factions ONLY:</Text>
                     <Text mt={1}>
                         NO glitching in units. It is highly recommended that all players on each team owns all DLC`s that give access to Grand Campaign factions. It is not mandatory to have them all, but no accommodations will be made for teams that have players who do not own all the GC factions. If a team refuses to buy a DLC when they must, they will forfeit their remaining games.
                     </Text>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    The same faction CANNOT be used by both teams in the same battle. For example, the attackers and defenders cannot both pick Carthage.
+                    <Text fontSize="lg" fontWeight="semibold">The same faction CANNOT be used by both teams in the same battle. For example, the attackers and defenders cannot both pick Carthage.</Text>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Settlements and order:
+                    <Text fontSize="lg" fontWeight="semibold">Settlements and order:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Teams will flip a coin. Winner of the toss picks to attack or defend first. Coin toss call and attack or defend first is to be done in the twl-faction-picks channel on the discord server.</ListItem>
                         <ListItem>Maps are assigned for each match. Check the schedule for the map to use for each matchup.</ListItem>
@@ -126,17 +127,17 @@ function RulesInfo() {
                         <ListItem>Moving units within the last 10 sec of the count down timer will be reviewed and may result in a point deduction. Minor tweaking does not count towards this rule.</ListItem>
                     </UnorderedList>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Teams consist of two “main” players plus one sub in case one of the “main” players isn`t available. This sub must be registered before the season begins, and they are the only player that may sub for the team throughout the duration of the season.
+                    <Text fontSize="lg" fontWeight="semibold">Teams consist of two “main” players plus one sub in case one of the “main” players isn`t available. This sub must be registered before the season begins, and they are the only player that may sub for the team throughout the duration of the season.</Text>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Factions are “Use em and lose em” — once used, teams may not reuse factions unless they use up every faction.
+                    <Text fontSize="lg" fontWeight="semibold">Factions are “Use em and lose em” — once used, teams may not reuse factions unless they use up every faction.</Text>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Disconnecting Forfeits:
+                    <Text fontSize="lg" fontWeight="semibold">Disconnecting Forfeits:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>If you drop the first time with more than 75% of your army left and/or less than 20 minutes have passed in the battle, teams restart.</ListItem>
                         <ListItem>Consecutive drops by a team (more than twice) is a forfeit.</ListItem>
@@ -145,9 +146,9 @@ function RulesInfo() {
                         <ListItem>In all circumstances, factions and army comps must remain the same.</ListItem>
                     </UnorderedList>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Rules for not arriving on matches on time:
+                    <Text fontSize="lg" fontWeight="semibold">Rules for not arriving on matches on time:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>If both teams agreed on a time and there is proof of it, you are expected to show up.</ListItem>
                         <ListItem>Teams need to wait at least 15 min for their opponent to show up. They may wait up to 30 min. If a team arrives over 15 minutes late but less than 30, they will receive a -1 point penalty.</ListItem>
@@ -156,24 +157,26 @@ function RulesInfo() {
                         <ListItem>If 24 hrs notice or more is given then no forfeit occurs. A penalty of -1 or more may be enforced against the team that needed to reschedule.</ListItem>
                     </UnorderedList>
                 </ListItem>
+                <Divider my={4} />
                 <ListItem>
-                    No-show Forfeits:
+                    <Text fontSize="lg" fontWeight="semibold">No-show Forfeits:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>In the event of a forfeit the `winner` gets +1 pts and picks two factions that will count as used. The `winning team` will get the points from that selection. Max 3 pts/battle forfeited.</ListItem>
                         <ListItem>The `loser` will get a -2 points penalty and have two factions chosen per battle forfeited at random from the wheel to count as used. The wheel selection will be live streamed.</ListItem>
                         <ListItem>This applies to both attack and defense for a maximum of 4 factions/team. A total of maximum -4 pts for forfeiting and maximum +6 points for `winning`.</ListItem>
                     </UnorderedList>
                 </ListItem>
+                <Divider my={4} />
                 <ListItem>
-                    Lag:
+                    <Text fontSize="lg" fontWeight="semibold">Lag:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Game super laggy? If teams agree, then the game can be rehosted. Same comps/factions.</ListItem>
                         <ListItem>Teams may also reschedule and use their sub to try and circumvent lag issues if 1 game sec is more than 3sec IRL.</ListItem>
                     </UnorderedList>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    League Structure:
+                    <Text fontSize="lg" fontWeight="semibold">League Structure:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Teams must play at least one and no more than 2 matchups per week. Failure to do so results in a -1pt penalty.</ListItem>
                         <ListItem>Games can be played anytime that teams can arrange. Streaming arrangements can be made with the discord moderators and participating streamers.</ListItem>
@@ -186,8 +189,9 @@ function RulesInfo() {
                         <ListItem>A team with NO wins or negative points is ineligible for playoffs.</ListItem>
                     </UnorderedList>
                 </ListItem>
+                <Divider my={4} />
                 <ListItem>
-                    Playoff structure:
+                    <Text fontSize="lg" fontWeight="semibold">Playoff structure:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Only factions which were unused during the Group stage are allowed in the playoffs.</ListItem>
                         <ListItem>Each team will play an attack and a defense.</ListItem>
@@ -198,8 +202,9 @@ function RulesInfo() {
                         <ListItem>Playoff scheduling is final, unless 24hrs notice is given. Failure to attend games at scheduled times results in forfeit.</ListItem>
                     </UnorderedList>
                 </ListItem>
+                <Divider my={4} />
                 <ListItem>
-                    Points and Penalties:
+                    <Text fontSize="lg" fontWeight="semibold">Points and Penalties:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Win matches to obtain points: Defensive victory = +2 pts, Attacking victory = +3 pts.</ListItem>
                         <ListItem>Not playing at least 1 match-up (2 battles) per week = -1 pt.</ListItem>
@@ -214,8 +219,9 @@ function RulesInfo() {
                         <ListItem>Conceding or leaving a battle before before it ends naturally (considered a rage quit) = -1 point. Recurring instances of this will result in being kicked from the league and blacklisted.</ListItem>
                     </UnorderedList>
                 </ListItem>
+                <Divider my={4} />
                 <ListItem>
-                    Getting banned/blacklisted from future seasons:
+                    <Text fontSize="lg" fontWeight="semibold">Getting banned/blacklisted from future seasons:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Excessive toxicity.</ListItem>
                         <ListItem>Forfeiting more than 2 matchups in one season.</ListItem>
@@ -225,9 +231,9 @@ function RulesInfo() {
                         <ListItem>In order to be reinstated in the league, the player or team must write a public apology in discord, to be reviewed by the high council.</ListItem>
                     </UnorderedList>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Disqualification:
+                    <Text fontSize="lg" fontWeight="semibold">Disqualification:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Suspected foul play will result in disqualification.</ListItem>
                         <ListItem>Purposely "throwing" for any reason results in a 2 point penalty and possibly other repercussions.</ListItem>
@@ -237,19 +243,19 @@ function RulesInfo() {
                         <ListItem>Purposely forfeiting to deny your opponent the chance to get more than 3 points from a battle is also grounds for disqualification.</ListItem>
                     </UnorderedList>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    If a game is played with no moderator and isn`t streamed, replays for both battles and the screenshots of the results for all players must be submitted to one of the moderators otherwise the game did not happen as far as we’re concerned.
+                    <Text fontSize="lg" fontWeight="semibold">If a game is played with no moderator and isn`t streamed, replays for both battles and the screenshots of the results for all players must be submitted to one of the moderators otherwise the game did not happen as far as we`re concerned.</Text>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Players must be in one of the voice channels (VC`s) on the MarketableSkills discord server during all TWL matches.
+                    <Text fontSize="lg" fontWeight="semibold">Players must be in one of the voice channels (VC`s) on the MarketableSkills discord server during all TWL matches.</Text>
                 </ListItem>
-
+                <Divider my={4} />
                 <ListItem>
-                    Any and all disputes will be considered by the High Council. Verdicts are final.
+                    <Text fontSize="lg" fontWeight="semibold">Any and all disputes will be considered by the High Council. Verdicts are final.</Text>
                 </ListItem>
-
+                <Divider my={4} />
             </OrderedList>
             <Center>
             <Text mt={5} mb={2} fontSize="lg" fontWeight="bold">Have a good fucking time!</Text>
