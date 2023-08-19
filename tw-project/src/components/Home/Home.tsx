@@ -147,6 +147,7 @@ function Home() {
                 <a href="https://paypal.me/bobitsv?country.x=BG&locale.x=en_US" target="_blank" rel="noopener noreferrer">
                     <Box
                         p={4}
+                        h="370px"
                         borderRadius="md"
                         textAlign="center"
                         bg="gray.700"
@@ -168,7 +169,7 @@ function Home() {
                     <Box
                         p={4}
                         borderRadius="md"
-                        h="337px"
+                        h="370px"
                         textAlign="center"
                         bg="gray.700"
                         color="white"
@@ -176,11 +177,12 @@ function Home() {
                         transition="0.3s"
                         _hover={{ bg: "gray.600" }}
                     >
-                        <Icon as={FaBroadcastTower} w={10} h={10} mb={2} /> {/* This is just a placeholder icon. You can use any appropriate icon for the streamer. */}
-                        <Text fontWeight="bold" fontSize="xl" mb={2}>Support MarketableSkills!</Text>
+                        <Icon as={FaBroadcastTower} w={10} h={10} mb={2} />
+                        <Text fontWeight="bold" fontSize="x10" mb={2}>Support MarketableSkills!</Text>
                         <Text mb={2}>Love the content? Show your appreciation and keep the streams coming!</Text>
-                        <Icon as={FaPaypal} w={8} h={8} mt={4} />
-                        <Text mt={2}>Donate to the Streamer with Streamlabs</Text>
+                        <Text fontSize="sm" mb={2}>MarketableSkills is dedicated to bringing you top-notch content every week. Donations help improve the stream quality, and support the continuous hard work!</Text>
+                        <Icon as={FaPaypal} w={8} h={8} mt={2} />
+                        <Text mt={2}>Donate to MarketableSkills with Streamlabs</Text>
                     </Box>
                 </a>
             </Grid>
