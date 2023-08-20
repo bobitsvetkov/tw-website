@@ -48,7 +48,10 @@ function Streamers() {
                 <Heading color="white">Meet our Streamers!</Heading>
             </Center>
 
-            <Grid templateColumns="repeat(3, 1fr)" gap={6}>
+            <Grid
+                templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
+                gap={6}
+            >
                 {streamers.map((streamer, index) => (
                     <LinkBox
                         key={index}
