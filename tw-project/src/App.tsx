@@ -7,6 +7,7 @@ import Youtubers from './components/Youtubers/Youtubers';
 import Prizes from './components/Prize/Prize';
 import Footer from './components/Footer/Footer';
 import VideoCard from './components/Videos/Youtube';
+import FactionTierList from './components/Faction Tier List/TierList';
 
 
 const App: React.FC = () => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         <Route path="/champions" element={<Champions />} />
         <Route path="/prizes" element={<Prizes />} />
         <Route path="/guides" element={<VideoCard />} />
+        <Route path="/faction-tier-list" element={<FactionTierList />} />
       </Routes>
       <Footer />
     </Router>
