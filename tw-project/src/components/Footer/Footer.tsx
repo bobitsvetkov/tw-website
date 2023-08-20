@@ -2,7 +2,7 @@ import { Box, Center, Text, Icon, Flex} from "@chakra-ui/react";
 import { FaCrown, FaRegCopy } from "react-icons/fa";  // Adding a copyright icon
 import { useState, useEffect } from 'react';
 
-function Footer() {
+const Footer: React.FC = () => {
     const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 
     useEffect(() => {

@@ -4,25 +4,13 @@ import Streamers from './components/Streamers/Streamers';
 import RulesInfo from './components/Rules and Info/RulesInfo';
 import Champions from './components/Champions/Champions';
 import Youtubers from './components/Youtubers/Youtubers';
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Prizes from './components/Prize/Prize';
 import Footer from './components/Footer/Footer';
 import VideoCard from './components/Videos/Youtube';
 
-const theme = extendTheme({
-  styles: {
-    global: {
-      body: {
-        backgroundColor: "gray.800",
-        color: "white"
-      }
-    }
-  }
-});
 
-function App() {
+const App: React.FC = () => {
   return (
-    <ChakraProvider theme={theme}>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -31,11 +19,10 @@ function App() {
         <Route path="/rules-info" element={<RulesInfo />} />
         <Route path="/champions" element={<Champions />} />
         <Route path="/prizes" element={<Prizes />} />
-        <Route path="/guides" element={< VideoCard />} />
+        <Route path="/guides" element={<VideoCard />} />
       </Routes>
-    </Router>
       <Footer />
-    </ChakraProvider>
+    </Router>
   );
 }
 

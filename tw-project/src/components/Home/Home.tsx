@@ -4,7 +4,7 @@ import { FaHeart, FaPaypal } from 'react-icons/fa';
 import logoImage from '../assets/logoImage.png'
 import { FaBroadcastTower } from "react-icons/fa";
 
-function Home() {
+const Home: React.FC = () => {
     return (
         <>
             <Box w="100%" h="300px" overflow="hidden">

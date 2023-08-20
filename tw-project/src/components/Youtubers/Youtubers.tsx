@@ -1,6 +1,6 @@
 import { Box, Center, Heading, Image, Text, Grid, LinkBox, LinkOverlay } from "@chakra-ui/react";
 import { useEffect } from 'react';
-function Youtubers() {
+const Youtubers: React.FC = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);

@@ -1,7 +1,7 @@
 import { Box, Heading, Text, List, Flex, Divider, ListItem } from "@chakra-ui/react";
 import { useEffect } from 'react';
 
-function Prizes() {
+const Prizes: React.FC = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);

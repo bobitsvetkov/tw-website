@@ -1,6 +1,6 @@
 import { Box, Image, Text, Grid, LinkBox, LinkOverlay, Center, Heading } from "@chakra-ui/react";
 import { useEffect } from 'react';
-function Streamers() {
+const Streamers: React.FC = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Box, Flex, Image, AspectRatio} from "@chakra-ui/react";
 import YouTube from 'react-youtube';
 
-function VideoPage() {
+const VideoPage: React.FC = () => {
     const [activeVideo, setActiveVideo] = useState<string | null>(null);
     const videos = ["i4iIz7N8B58", "Qadoh8Utu1I", "MQ8-DYQN0bE",
     "aZJvzkAt-o0", "-3ZvzigPrSQ", "Mh1j26xxc78", "ZdByF_5N8Hs",
