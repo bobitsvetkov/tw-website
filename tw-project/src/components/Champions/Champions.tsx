@@ -79,7 +79,7 @@ function Champions() {
     return (
         <Box bg="gray.900" minHeight="100vh" p={6}>  {/* Darker shade of gray for the background */}
             <Center mb={6}>
-                <Heading color={cardColor}>Check Out The Top Teams!</Heading>
+                <Heading color={cardColor}>Historical Results</Heading>
             </Center>
             <SimpleGrid columns={3} spacing={10}>
                 {seasons.map((s, index) => (
