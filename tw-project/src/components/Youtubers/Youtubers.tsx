@@ -63,7 +63,10 @@ If you enjoy funny and personal commentary during streams(and some failures) thi
                 <Heading color="white">Check out our Youtubers!</Heading>
             </Center>
 
-            <Grid templateColumns="repeat(3, 1fr)" gap={6} mt={6} p={4}>
+            <Grid
+                templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
+                gap={6}
+            >
                 {youtubers.map((youtuber, index) => (
                     <LinkBox
                         key={index}
