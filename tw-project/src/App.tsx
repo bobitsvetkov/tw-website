@@ -8,7 +8,7 @@ import Prizes from './components/Prize/Prize';
 import Footer from './components/Footer/Footer';
 import VideoCard from './components/Videos/Youtube';
 import FactionTierList from './components/Faction Tier List/TierList';
-
+import DLCDetails from './components/DLC/DLCDetails';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +22,7 @@ const App: React.FC = () => {
         <Route path="/prizes" element={<Prizes />} />
         <Route path="/guides" element={<VideoCard />} />
         <Route path="/faction-tier-list" element={<FactionTierList />} />
+        <Route path="/dlc-recommendations" element={<DLCDetails />} />
       </Routes>
       <Footer />
     </Router>

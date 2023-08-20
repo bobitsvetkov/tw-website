@@ -4,6 +4,7 @@ import { FaHeart, FaPaypal } from 'react-icons/fa';
 import logoImage from '../assets/logoImage.png'
 import { FaBroadcastTower } from "react-icons/fa";
 import FactionTierCard from "../Faction Tier List/TierCard";
+import DLCCard from "../DLC/DLCCard";
 const Home: React.FC = () => {
     return (
         <>
@@ -201,6 +202,7 @@ const Home: React.FC = () => {
                     </Box>
                 </Link>
                     <FactionTierCard />
+                    <DLCCard />
 
             </Grid>
         </>
