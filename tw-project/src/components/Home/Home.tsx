@@ -2,7 +2,7 @@ import { Box, Image, Text, Grid, Icon } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { FaHeart, FaPaypal } from 'react-icons/fa';
 import logoImage from '../assets/logoImage.png'
-import { FaBroadcastTower } from "react-icons/fa";
+import { FaBroadcastTower, FaVideo } from 'react-icons/fa';
 import FactionTierCard from "../Faction Tier List/TierCard";
 import DLCCard from "../DLC/DLCCard";
 const Home: React.FC = () => {
@@ -179,10 +179,10 @@ const Home: React.FC = () => {
                         _hover={{ bg: "gray.600" }}
                     >
                         <Icon as={FaBroadcastTower} w={10} h={10} mb={2} />
-                        <Text fontWeight="bold" fontSize="x10" mb={2}>Support MarketableSkills!</Text>
+                        <Text fontWeight="bold" fontSize="xl" mb={2}>Support MarketableSkills!</Text>
                         <Text mb={2}>Love the content? Show your appreciation and keep the streams coming!</Text>
                         <Text fontSize="sm" mb={2}>MarketableSkills is dedicated to bringing you top-notch content every week. Donations help improve the stream quality, and support the continuous hard work!</Text>
-                        <Icon as={FaPaypal} w={8} h={8} mt={2} />
+                        <Icon as={FaVideo} w={8} h={8} mt={2} /> {/* This is the icon change for Streamlabs */}
                         <Text mt={2}>Donate to MarketableSkills with Streamlabs</Text>
                     </Box>
                 </a>

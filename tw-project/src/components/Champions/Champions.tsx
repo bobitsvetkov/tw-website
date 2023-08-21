@@ -1,4 +1,4 @@
-import { Box, Center, Text, SimpleGrid, Icon, Heading} from "@chakra-ui/react";
+import { Box, Center, Text, SimpleGrid, Icon, Heading, useBreakpointValue} from "@chakra-ui/react";
 import { FaTrophy } from 'react-icons/fa';
 import { useEffect } from 'react';
 const Champions: React.FC = () => {
@@ -76,12 +76,13 @@ const Champions: React.FC = () => {
     ];
     const cardBg = "gray.700"; // Lighter shade of gray for the card
     const cardColor = "white"; // White text color
+    const columns = useBreakpointValue({ base: 1, md: 2, lg: 3 });
     return (
         <Box bg="gray.900" minHeight="100vh" p={6}>  {/* Darker shade of gray for the background */}
             <Center mb={6}>
                 <Heading color={cardColor}>Historical Results</Heading>
             </Center>
-            <SimpleGrid columns={3} spacing={10}>
+            <SimpleGrid columns={columns} spacing={10}>
                 {seasons.map((s, index) => (
                     <Box
                         key={index}
