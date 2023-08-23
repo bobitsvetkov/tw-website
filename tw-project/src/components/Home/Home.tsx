@@ -145,7 +145,7 @@ const Home: React.FC = () => {
                     </Box>
                 </Link>
 
-                <a href="https://paypal.me/bobitsv?country.x=BG&locale.x=en_US" target="_blank" rel="noopener noreferrer">
+                <a href="revolut.me/borislocc9" target="_blank" rel="noopener noreferrer">
                     <Box
                         p={4}
                         h="370px"
@@ -162,7 +162,7 @@ const Home: React.FC = () => {
                         <Text mb={2}>Help support the continuous development of this site. Your generosity keeps us going!</Text>
                         <Text mt={2} fontStyle="italic">"In Bulgaria, we have a saying, I would rather throw up blood than give refunds, so you better not ask for refunds! 😆"</Text>
                         <Icon as={FaPaypal} w={8} h={8} mt={4} />
-                        <Text mt={2}>Donate with PayPal</Text>
+                        <Text mt={2}>Donate with Revolut</Text>
                     </Box>
                 </a>
 
