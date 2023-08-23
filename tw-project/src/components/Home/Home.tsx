@@ -145,7 +145,7 @@ const Home: React.FC = () => {
                     </Box>
                 </Link>
 
-                <a href="revolut.me/borislocc9" target="_blank" rel="noopener noreferrer">
+                <a href="https://revolut.me/borislocc9" target="_blank" rel="noopener noreferrer">
                     <Box
                         p={4}
                         h="370px"
