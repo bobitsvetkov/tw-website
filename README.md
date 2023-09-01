@@ -5,28 +5,28 @@ Welcome to the MarketableSkills Community Website! This website is designed to e
 ## Features
 
 ### Donation Links
-- **Description:** Donation links have been integrated into the website, contributing to a 15% increase in the streamer's revenue.
-- **How to Use:** Simply click on the provided donation links to support the streamer.
+- **Description:** Donation links have been integrated into the website.
+- **How to Use:** Simply click on the provided donation links to support the streamer or the creator of the site.
 
 ### Influencer Links
-- **Description:** Influencer links are designed to help increase the number of followers by about 10%.
-- **How to Use:** Visit the provided influencer links to connect with and follow the streamer on various platforms.
+- **Description:** Influencer links are designed to help increase the number of followers of affiliated streamers.
+- **How to Use:** Visit the provided influencer links to connect with and follow different streamers on various platforms.
 
 ### Historical Records
-- **Description:** The website offers access to historical records, allowing you to explore the streamer's journey.
-- **How to Use:** Navigate to the Historical Records section to discover more about the streamer's past streams and accomplishments.
+- **Description:** The website offers access to historical records, allowing you to explore the community's champions.
+- **How to Use:** Navigate to the Historical Records section to discover more about the best players in total war league siege!.
 
 ### Merch Links
 - **Description:** Access links to the streamer's merchandise, so you can show your support.
 - **How to Use:** Click on the Merch Links to explore and purchase streamer-themed merchandise.
 
 ### Recommendations for DLC
-- **Description:** Find recommendations for downloadable content (DLC) related to the streamer's content.
-- **How to Use:** Browse through the Recommendations for DLC section to discover exciting add-ons for your favorite games.
+- **Description:** Find recommendations for downloadable content (DLC) in Rome 2.
+- **How to Use:** Browse through the Recommendations for DLC section to discover necessary DLCs with description on what they add to the game.
 
 ### Videos Embedding
-- **Description:** Videos from the streamer's channel can be embedded directly into the website.
-- **How to Use:** Watch the streamer's videos without leaving the website, providing a seamless viewing experience.
+- **Description:** Embedded videos from youtubers and streamers.
+- **How to Use:** Watch video guides in rome 2 without leaving the website.
 
 ## Getting Started
 
