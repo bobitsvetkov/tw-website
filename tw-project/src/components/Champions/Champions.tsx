@@ -67,12 +67,16 @@ const Champions: React.FC = () => {
             mostChevrons: "1. rifou (10.67) 2. Bubinni (10.55) 3. Rogal Dorn (10.00)",
             finalsLink: "https://www.youtube.com/watch?v=VaFPdz1XObQ"
         },
-        // {
-        //     season: "Season 8",
-        //     winner: "Grass Touchers (WhosMrBubbles and xAizenTTV, Sub: Saturate)",
-        //     runnerUp: "Parthia's Finest (Kirky and Donald, Sub: BigBees)",
-        //     mostPoints: "SweetTeaLovers (Moist Blueberry and msheat, Sub: captain: 2.0 PPG)"
-        // },
+        {
+            season: "Season 8",
+            winner: "Parthia's Finest (Jbarbs and Kirky, Sub: BigBees)",
+            runnerUp: "Best or Bust (Dovahkiin and Berry, Sub: Seneys Martell)",
+            mostPoints: "Cimmeria's Chosen (Rogal and Desstro, Sub: Medusa: 4.5 PPG)",
+            thirdPlace: "Gorilla Bois (Hyena and Bubinni, Sub: jjj)",
+            topKD: "1. jbarbs (1.50) 2. Hyena (1.28) 3. Desstro (1.24)",
+            mostChevrons: "1. jbarbs(10.42) 2. Hyena(10.07) 3. Desttro(9.42)",
+            finalsLink: "https://www.youtube.com/watch?v=Zr7FCWC9D2U"
+        },
     ];
     const cardBg = "gray.700"; // Lighter shade of gray for the card
     const cardColor = "white"; // White text color
