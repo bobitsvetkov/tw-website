@@ -36,7 +36,7 @@ const RulesInfo: React.FC = () => {
                         <ListItem>1 artillery piece per player on attack. Max 1 of each artillery type (ballista/onager and scorpion) per team on attack. On defense, only 1 artillery can be brought per team (only scorpions may be used inside the settlement).</ListItem>
                         <ListItem>2 pikes per player</ListItem>
                         <ListItem>4 missile units (slinger, archers, archer cav) + 1 “javie” unit (peltast, javelinmen, agrianian, javie cav or horse archer) per player</ListItem>
-                        <ListItem>7 of the same unit per player (i.e. can`t bring 8 thorax swordsmen)</ListItem>
+                        <ListItem>8 of the same unit per player (i.e. can`t bring 9 thorax swordsmen)</ListItem>
                         <ListItem>2 eles/chariots per team</ListItem>
                     </UnorderedList>
                 </ListItem>
@@ -104,7 +104,7 @@ const RulesInfo: React.FC = () => {
                 </ListItem>
                 <Divider my={4} />
                 <ListItem>
-                    <Text fontSize="lg" fontWeight="semibold">Grand Campaign factions ONLY:</Text>
+                    <Text fontSize="lg" fontWeight="semibold">Grand Campaign  and Rise of the Republic factions ONLY:</Text>
                     <Text mt={1}>
                         NO glitching in units. It is highly recommended that all players on each team owns all DLC`s that give access to Grand Campaign factions. It is not mandatory to have them all, but no accommodations will be made for teams that have players who do not own all the GC factions. If a team refuses to buy a DLC when they must, they will forfeit their remaining games.
                     </Text>
@@ -182,9 +182,15 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Games can be played anytime that teams can arrange. Streaming arrangements can be made with the discord moderators and participating streamers.</ListItem>
                         <ListItem>Each Group plays a round robin so each team plays all the other teams in their group once.</ListItem>
                         <ListItem>The top team by points in each group advances to the playoff round.</ListItem>
-                        <ListItem>Playoff position: Group winners will be the 1-5 seeds in order of points. Group runner-ups will be the 6-10 seeds. Then, two third place teams with the most points will be the 11 and 12 seeds.</ListItem>
+                        <ListItem>Playoff position: Group winners will be the 1-8 seeds in order of points. Group runner-ups will be the 9-16 seeds. Then, two third place teams with the most points will be the 11 and 12 seeds.</ListItem>
                         <ListItem>In the event of a tie, Group play record determines the winner. If tied in points, win%, and head to head record, a land battle will be fought.</ListItem>
-                        <ListItem>Land battles will be fought using rules from TWL.</ListItem>
+                        <ListItem> Land battles will be fought according to these rules:
+                            no art
+                            max 4 horse archers/jav cav
+                            max 2 ele/char per team
+                            max 5 of the same unit
+                            Map will be Mons Regius, attack direction east
+                        </ListItem>
                         <ListItem>Factions used in land battles WILL NOT count towards your faction track. However, you can only use factions that you have not already used before in siege battles.</ListItem>
                         <ListItem>A team with NO wins or negative points is ineligible for playoffs.</ListItem>
                     </UnorderedList>
@@ -241,9 +247,21 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Making false accusations about rule infractions = 2 point penalty.</ListItem>
                         <ListItem>Rule breaking accusations must be substantiated with evidence: screen shots, timestamp, and location on the battlefield.</ListItem>
                         <ListItem>Purposely forfeiting to deny your opponent the chance to get more than 3 points from a battle is also grounds for disqualification.</ListItem>
+                        <ListItem>Spying on rival teams by joining their passworded lobby will result in player DQ</ListItem>
+                        <ListItem>“Leaking” rival team strats and faction selections to other teams will result in player DQ</ListItem>
+
                     </UnorderedList>
                 </ListItem>
                 <Divider my={4} />
+                <ListItem>
+                    <Text fontSize="lg" fontWeight="semibold">UnsportsmanLike Conduct::</Text>
+                    <UnorderedList mt={1} pl={5}>
+                        <ListItem>Instances of unsportsman like conduct will be put to a Mod/Referee vote. Penalty
+                            will range from warning to DQ, depending on the severity of the transgression.
+                        </ListItem>
+
+                    </UnorderedList>
+                </ListItem>
                 <ListItem>
                     <Text fontSize="lg" fontWeight="semibold">If a game is played with no moderator and isn`t streamed, replays for both battles and the screenshots of the results for all players must be submitted to one of the moderators otherwise the game did not happen as far as we`re concerned.</Text>
                 </ListItem>
