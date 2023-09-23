@@ -201,6 +201,21 @@ const Home: React.FC = () => {
                         <Text mt={2}>Rome 2 Guides</Text>
                     </Box>
                 </Link>
+                <Link to="/challenges">
+                    <Box
+                        p={4}
+                        borderRadius="md"
+                        textAlign="center"
+                        bg="gray.700"
+                        color="white"
+                        boxShadow="lg"
+                        transition="0.3s"
+                        _hover={{ bg: "gray.600" }}
+                    >
+                        <Image src="https://i.imgur.com/C3u4BD0.jpg" alt="Prizes" boxSize="300px" mx="auto" mb={4} />
+                        <Text mt={2}>Prizes and Awards</Text>
+                    </Box>
+                </Link>
                     <FactionTierCard />
                     <DLCCard />
 
