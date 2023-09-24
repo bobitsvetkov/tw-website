@@ -65,6 +65,17 @@ const RulesInfo: React.FC = () => {
                 </ListItem>
                 <Divider my={4} />
                 <ListItem>
+                    <Text fontSize="lg" fontWeight="semibold"> Pull through Infractions: </Text>
+                    <UnorderedList mt={1} pl={5}>
+                        <ListItem> clearly intentional PT obtained by click-spamming = forfeit and -1.</ListItem>
+                        <ListItem>unclear whether intentional or not = penalty to mod discretion.</ListItem>
+                        <ListItem>clearly accidental PT beneficial to the pushing-through team : -1.</ListItem>
+                        <ListItem>clearly accidental PT that didn't benefit the pushing-through team : no penalty.</ListItem>
+                        <ListItem>Multiple instance of Pull through infarction may result in additional penalties, forfeit or DQ.</ListItem>
+                    </UnorderedList>
+                </ListItem>
+                <Divider my={4} />
+                <ListItem>
                     <Text fontSize="lg" fontWeight="semibold">No camping the VP:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Victory point camping is placing all of/a majority of one's units at the choke points leading to the final capture point on the map.</ListItem>
@@ -83,11 +94,12 @@ const RulesInfo: React.FC = () => {
                 <ListItem>
                     <Text fontSize="lg" fontWeight="semibold">Other Exploits:</Text>
                     <UnorderedList mt={1} pl={5}>
-                        <ListItem>No siege towers, tortoises, galleys, or battering rams inside the settlement.</ListItem>
+                        <ListItem>No siege towers, tortoises, or battering rams inside the settlement.</ListItem>
                         <ListItem>No Beserk Elephant exploit.</ListItem>
                         <ListItem>No tort/wall exploit.</ListItem>
                         <ListItem>No infinite charge bonus exploit.</ListItem>
                         <ListItem>No glitching torts or greek city siege towers into barb settlements.</ListItem>
+                        <ListItem>Galleys are banned.</ListItem>
                         <ListItem>No other exploits. Ask a moderator if you are unsure if something is an exploit.</ListItem>
                     </UnorderedList>
                 </ListItem>
@@ -120,10 +132,12 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Teams will flip a coin. Winner of the toss picks to attack or defend first. Coin toss call and attack or defend first is to be done in the twl-faction-picks channel on the discord server.</ListItem>
                         <ListItem>Maps are assigned for each match. Check the schedule for the map to use for each matchup.</ListItem>
                         <ListItem>If the wrong settlement is used, both teams will get a -1 penalty.</ListItem>
-                        <ListItem>The attacking team picks the first faction. Then teams alternate faction picks. Faction picks must be done in the twl-faction-picks channel on the discord server.</ListItem>
+                        <ListItem>The attacking team picks the first faction and last. Defending team picks second and third.
+                            It doesn`t matter which teammate picks which faction (i.e. teammates can switch who`s playing what faction before the battle begins).
+                            Faction picks must be done in the twl-faction-picks channel on the discord server.</ListItem>
                         <ListItem>You must be loaded into the first battle no more than 10 minutes past the agreed start time for the match. Team(s) that are late will receive a -1 penalty.</ListItem>
                         <ListItem>Both attack and defense are played on the same map.</ListItem>
-                        <ListItem>Moving entire army once the 60 sec countdown begins is considered a forfeit.</ListItem>
+                        <ListItem>Moving entire army once the 60 sec countdown begins is considered a forfeit (unsportsmanlike). </ListItem>
                         <ListItem>Moving units within the last 10 sec of the count down timer will be reviewed and may result in a point deduction. Minor tweaking does not count towards this rule.</ListItem>
                     </UnorderedList>
                 </ListItem>
@@ -151,7 +165,8 @@ const RulesInfo: React.FC = () => {
                     <Text fontSize="lg" fontWeight="semibold">Rules for not arriving on matches on time:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>If both teams agreed on a time and there is proof of it, you are expected to show up.</ListItem>
-                        <ListItem>Teams need to wait at least 15 min for their opponent to show up. They may wait up to 30 min. If a team arrives over 15 minutes late but less than 30, they will receive a -1 point penalty.</ListItem>
+                        <ListItem>Teams need to wait at least 15 min for their opponent to show up. They may wait up to 30 min. If a team arrives over 15 minutes late but less than 30, they will receive a -1 point penalty
+                            (unless both teams and mod council agrees players can wait for up to 30 minutes without penalty).</ListItem>
                         <ListItem>After the time limit, the attack of the team that showed up will be a forfeit victory. The second battle will be rescheduled.</ListItem>
                         <ListItem>In the rescheduled battle, the “winners” from the forfeit are by default the defenders.</ListItem>
                         <ListItem>If 24 hrs notice or more is given then no forfeit occurs. A penalty of -1 or more may be enforced against the team that needed to reschedule.</ListItem>
@@ -182,16 +197,8 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Games can be played anytime that teams can arrange. Streaming arrangements can be made with the discord moderators and participating streamers.</ListItem>
                         <ListItem>Each Group plays a round robin so each team plays all the other teams in their group once.</ListItem>
                         <ListItem>The top team by points in each group advances to the playoff round.</ListItem>
-                        <ListItem>Playoff position: Group winners will be the 1-8 seeds in order of points. Group runner-ups will be the 9-16 seeds. Then, two third place teams with the most points will be the 11 and 12 seeds.</ListItem>
-                        <ListItem>In the event of a tie, Group play record determines the winner. If tied in points, win%, and head to head record, a land battle will be fought.</ListItem>
-                        <ListItem> Land battles will be fought according to these rules:
-                            no art
-                            max 4 horse archers/jav cav
-                            max 2 ele/char per team
-                            max 5 of the same unit
-                            Map will be Mons Regius, attack direction east
-                        </ListItem>
-                        <ListItem>Factions used in land battles WILL NOT count towards your faction track. However, you can only use factions that you have not already used before in siege battles.</ListItem>
+                        <ListItem>Playoff position: Group winners will be the 1-8 seeds in order of points. Group runner-ups will be the 9-16 seeds. Then, two third place teams with the most points will be the 15 and 16 seeds.</ListItem>
+                        <ListItem>Players are NOT allowed to go for a tie. Teams must go for the win.</ListItem>
                         <ListItem>A team with NO wins or negative points is ineligible for playoffs.</ListItem>
                     </UnorderedList>
                 </ListItem>
@@ -254,12 +261,17 @@ const RulesInfo: React.FC = () => {
                 </ListItem>
                 <Divider my={4} />
                 <ListItem>
-                    <Text fontSize="lg" fontWeight="semibold">UnsportsmanLike Conduct::</Text>
+                    <Text fontSize="lg" fontWeight="semibold">UnsportsmanLike Conduct:</Text>
                     <UnorderedList mt={1} pl={5}>
-                        <ListItem>Instances of unsportsman like conduct will be put to a Mod/Referee vote. Penalty
+                        <ListItem>Instances of unsportsmanlike conduct will be put to a Mod/Referee vote. Penalty
                             will range from warning to DQ, depending on the severity of the transgression.
                         </ListItem>
-
+                        <ListItem>For the sake of clarity here are some examples of unsportsmanlike conduct:</ListItem>
+                        <ListItem>Conceding defeat / leaving the battle early</ListItem>
+                        <ListItem>Moving entire army once the 60 sec countdown begins</ListItem>
+                        <ListItem>Pushing drama (such as continuing to push drama long after mod council has made a decision)</ListItem>
+                        <ListItem>Intentional Pushthrough</ListItem>
+                        <ListItem>Leaking strat/factions/army comps</ListItem>
                     </UnorderedList>
                 </ListItem>
                 <ListItem>
