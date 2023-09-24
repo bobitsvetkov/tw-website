@@ -1,5 +1,4 @@
 import { Box, Text, Image, Heading, useBreakpointValue, Flex, Center, SimpleGrid } from "@chakra-ui/react";
-import { FaTrophy } from "react-icons/fa";
 
 interface Challenge {
     id: string;
