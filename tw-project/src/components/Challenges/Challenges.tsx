@@ -17,7 +17,7 @@ const challenges: Challenge[] = [
         winner: "Berry",
         chevrons: 14,
         kills: 2336,
-        title: "The Desert Sentinel Role",
+        title: "The Desert Sentinel",
         description: "Faction challenge for Nabatea",
         image: "https://cdn.britannica.com/13/6213-004-2CA88DF6/Flag-Romania.jpg",
         screenshotLink: "https://cdn.discordapp.com/attachments/1154521158583062608/1155271932707606629/20230924013428_1.jpg"
