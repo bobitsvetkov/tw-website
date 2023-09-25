@@ -140,7 +140,7 @@ const challenges: Challenge[] = [
 ];
 
 
-const ChallengeList: React.FC = () => {
+const UnitChallengesPage: React.FC = () => {
     const cardBg = 'gray.700';
     const cardColor = 'white';
     const columns = useBreakpointValue({ base: 1, md: 2, lg: 3 });
@@ -184,4 +184,4 @@ const ChallengeList: React.FC = () => {
     );
 };
 
-export default ChallengeList;
+export default UnitChallengesPage;

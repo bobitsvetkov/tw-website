@@ -213,7 +213,7 @@ const Home: React.FC = () => {
                         _hover={{ bg: "gray.600" }}
                     >
                         <Image src="https://i.imgur.com/C3u4BD0.jpg" alt="Prizes" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Prizes and Awards</Text>
+                        <Text mt={2}>Challenges</Text>
                     </Box>
                 </Link>
                     <FactionTierCard />
