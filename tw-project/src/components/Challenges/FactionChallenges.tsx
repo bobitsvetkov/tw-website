@@ -1,4 +1,4 @@
-import { Box, Text, Image, Heading, useBreakpointValue, Flex, Center, Button, Link, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter } from "@chakra-ui/react";
+import { Box, Text, Image, Heading, useBreakpointValue, Flex, Center, Link, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter } from "@chakra-ui/react";
 import React, { useState } from "react";
 
 interface Challenge {
