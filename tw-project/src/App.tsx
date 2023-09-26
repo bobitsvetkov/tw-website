@@ -26,8 +26,8 @@ const App: React.FC = () => {
         <Route path="/faction-tier-list" element={<FactionTierList />} />
         <Route path="/dlc-recommendations" element={<DLCDetails />} />
         <Route path="/challenges" element={<ChallengesPage />} />
-        <Route path="/challenges/faction" element={<FactionChallengesPage />} />
-        <Route path="/challenges/unit" element={< UnitChallengesPage />} />
+        <Route path="/challenges/factions" element={<FactionChallengesPage />} />
+        <Route path="/challenges/units" element={< UnitChallengesPage />} />
       </Routes>
       <Footer />
     </Router>

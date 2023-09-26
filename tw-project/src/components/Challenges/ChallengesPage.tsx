@@ -36,7 +36,7 @@ const ChallengesPage = () => {
             <Flex style={cardGroupStyle}>
                 {/* Card for Unit Challenges */}
                 <Box style={cardContainerStyle}>
-                    <Link to="/challenges/unit">
+                    <Link to="/challenges/units">
                         <Image
                             src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/total-war-rome-ii/c/c8/RomanTetstudo.jpg"
                             alt="Unit Challenges"
@@ -50,7 +50,7 @@ const ChallengesPage = () => {
 
                 {/* Card for Faction Challenges */}
                 <Box style={cardContainerStyle}>
-                    <Link to="/challenges/faction">
+                    <Link to="/challenges/factions">
                         <Image
                             src="https://wiki.totalwar.com/images/3/3e/Factions-banner-2.jpg"
                             alt="Faction Challenges"
