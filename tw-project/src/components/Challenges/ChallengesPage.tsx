@@ -43,7 +43,7 @@ const ChallengesPage = () => {
                             style={cardImageStyle}
                         />
                         <Text fontSize="1rem" color="white" mt="0.5rem">
-                            These challenges are focused more on specific units. These challenges are more focused on individual units rather than factions themselves.
+                            These challenges are more focused on individual units rather than factions themselves. Have fun while you go through these fun challenges!
                         </Text>
                     </Link>
                 </Box>
