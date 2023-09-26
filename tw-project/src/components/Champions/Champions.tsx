@@ -55,7 +55,7 @@ const Champions: React.FC = () => {
             thirdPlace: "Perkele (Mia and Hagehi, Sub: AgentPanda)",
             topKD: "1. Bubinni (1.28) 2. Mia (1.27) 3. Donald (1.18)",
             mostChevrons: "1. Hoax(9.88) 2. Nungle(9.45) 3. rifou(9.29)",
-            finalsLink: "https://www.youtube.com/watch?v=IcCu8cWUZz8"
+            finalsLink: "https://youtu.be/XRUFEsNovT4?si=rHvaQ9UpF4qjRF14&t=9889"
         },
         {
             season: "Season 7",
