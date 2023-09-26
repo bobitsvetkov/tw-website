@@ -4,7 +4,7 @@ import { Box, Flex, Heading, Text, Image } from "@chakra-ui/react";
 const ChallengesPage = () => {
     const cardImageStyle = {
         width: "100%",
-        maxHeight: "300px",
+        height: "400px",
         objectFit: "cover",
         position: "relative",
     } as React.CSSProperties;
@@ -38,7 +38,7 @@ const ChallengesPage = () => {
                 <Box style={cardContainerStyle}>
                     <Link to="/challenges/units">
                         <Image
-                            src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/total-war-rome-ii/c/c8/RomanTetstudo.jpg"
+                            src="https://cdn.discordapp.com/attachments/788828998410960926/1156258544786624525/Roman_Testudo_Demo.jpg?ex=6514512f&is=6512ffaf&hm=9a8359f30d9721cbece9c7563cc1d16a8304f9ff2b551d891c61acd9ec7db198&"
                             alt="Unit Challenges"
                             style={cardImageStyle}
                         />
