@@ -90,7 +90,7 @@ const FactionChallengesPage: React.FC = () => {
                                     maxH="100px"
                                 />
                             </Center>
-                            <Accordion allowToggle>
+                            <Accordion allowToggle colorScheme="gray">
                                 <AccordionItem mt={4}>
                                     {({ isExpanded }) => (
                                         <>
