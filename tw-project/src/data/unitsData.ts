@@ -31,7 +31,7 @@ const unitChallenges: UnitChallenges[] = [
         chevrons: 0,
         kills: 0,
         title: "The Sexman ",
-        description: "Min 4 picked peltasts with 2 chevrons each",
+        description: "Min 6 Axeman with a chevron each",
         image: "https://img.freepik.com/free-vector/white-flag-wind-against-blue-sky-with-white-clouds-background-banner-abstract_1284-5383.jpg?w=2000",
         screenshotLink: "https://t3.ftcdn.net/jpg/04/17/86/40/360_F_417864022_gltC9P15AWWal6wXOK9CPcc5vaJWqlPN.jpg",
         unitIcon: "https://www.honga.net/totalwar/rome2/gen_images/unit_icon/rome2/rom_armenia/Eas_Axemen.png"
