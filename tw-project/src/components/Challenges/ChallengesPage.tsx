@@ -4,7 +4,7 @@ import { Box, Flex, Heading, Text, Image } from "@chakra-ui/react";
 const ChallengesPage = () => {
     const cardImageStyle = {
         width: "100%",
-        height: "400px",
+        maxHeight: "400px",
         objectFit: "cover",
         position: "relative",
     } as React.CSSProperties;
@@ -38,7 +38,7 @@ const ChallengesPage = () => {
                 <Box style={cardContainerStyle}>
                     <Link to="/challenges/units">
                         <Image
-                            src="https://cdn.discordapp.com/attachments/788828998410960926/1156258544786624525/Roman_Testudo_Demo.jpg?ex=6514512f&is=6512ffaf&hm=9a8359f30d9721cbece9c7563cc1d16a8304f9ff2b551d891c61acd9ec7db198&"
+                            src="https://cdn.discordapp.com/attachments/788828998410960926/1156268557949218876/Rome_2_Units.jpg?ex=65150342&is=6513b1c2&hm=ce7874b257ac593dee24fa7ecde2f8e63dc6e938b05581cb178718ebc1a4926c&"
                             alt="Unit Challenges"
                             style={cardImageStyle}
                         />
@@ -52,7 +52,7 @@ const ChallengesPage = () => {
                 <Box style={cardContainerStyle}>
                     <Link to="/challenges/factions">
                         <Image
-                            src="https://wiki.totalwar.com/images/3/3e/Factions-banner-2.jpg"
+                            src="https://cdn.discordapp.com/attachments/788828998410960926/1156268571819786362/Rome_2_Factions.jpg?ex=65150345&is=6513b1c5&hm=2a4958ad8ac4294ccb8bc6ad071a0f257f713e046a039e956d982fa714a4ebaf&"
                             alt="Faction Challenges"
                             style={cardImageStyle}
                         />
