@@ -140,7 +140,7 @@ const Home: React.FC = () => {
                         transition="0.3s"
                         _hover={{ bg: "gray.600" }}
                     >
-                        <Image src="https://cdn.akamai.steamstatic.com/steam/apps/850010/ss_2e62636842bec1a9c82fe91fcb59a87c2c7de1a0.1920x1080.jpg?t=1571743030" alt="Prizes" boxSize="300px" mx="auto" mb={4} />
+                        <Image src="https://assetsio.reedpopcdn.com/rome-total-war-ii-screenshot.png?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="Prizes" boxSize="300px" mx="auto" mb={4} />
                         <Text mt={2}>Prizes and Awards</Text>
                     </Box>
                 </Link>
