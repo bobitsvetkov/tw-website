@@ -91,7 +91,7 @@ const FactionChallengesPage: React.FC = () => {
                                 />
                             </Center>
                             <Accordion allowToggle colorScheme="gray">
-                                <AccordionItem mt={4}>
+                                <AccordionItem mt={4}  borderColor={"rgb(255 255 255 / 16%)"}>
                                     {({ isExpanded }) => (
                                         <>
                                             <AccordionButton>
@@ -110,7 +110,7 @@ const FactionChallengesPage: React.FC = () => {
                                         </>
                                     )}
                                 </AccordionItem>
-                                <AccordionItem>
+                                <AccordionItem borderColor={"rgb(255 255 255 / 16%)"}>
                                     {({ isExpanded }) => (
                                         <>
                                             <AccordionButton>
@@ -129,7 +129,7 @@ const FactionChallengesPage: React.FC = () => {
                                         </>
                                     )}
                                 </AccordionItem>
-                                <AccordionItem>
+                                <AccordionItem borderColor={"rgb(255 255 255 / 16%)"}>
                                     {({ isExpanded }) => (
                                         <>
                                             <AccordionButton>
@@ -150,7 +150,7 @@ const FactionChallengesPage: React.FC = () => {
                                         </>
                                     )}
                                 </AccordionItem>
-                                <AccordionItem>
+                                <AccordionItem borderColor={"rgb(255 255 255 / 16%)"}>
                                     {({ isExpanded }) => (
                                         <>
                                             <AccordionButton>
@@ -171,7 +171,7 @@ const FactionChallengesPage: React.FC = () => {
                                         </>
                                     )}
                                 </AccordionItem>
-                                <AccordionItem>
+                                <AccordionItem borderColor={"rgb(255 255 255 / 16%)"}>
                                     {({ isExpanded }) => (
                                         <>
                                             <AccordionButton>
