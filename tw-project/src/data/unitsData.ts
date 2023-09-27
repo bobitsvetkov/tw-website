@@ -7,7 +7,7 @@ const unitChallenges: UnitChallenges[] = [
         chevrons: 11,
         kills: 1249,
         title: "Shotel Elite",
-        description: "Comm to Brazil!",
+        description: "Min 5 shotels(armored or regular) with 2 chevrons each",
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png",
         screenshotLink: "https://cdn.discordapp.com/attachments/1154521158583062608/1154554558866010132/image.png?ex=65136439&is=651212b9&hm=9762dc34f8f9cf7724cf7efcb0952eaa0dddb9d7f94b0f56509e8dedfc3ff9ff&",
         unitIcon: "https://www.honga.net/totalwar/rome2/gen_images/unit_icon/rome2/rom_kush/dk_kush_armoured_shotel_warriors.png"

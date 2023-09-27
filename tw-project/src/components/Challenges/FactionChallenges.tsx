@@ -52,8 +52,8 @@ const FactionChallengesPage: React.FC = () => {
                             <Text mt={4}>Winner: {selectedChallenge.winner}</Text>
                             <Text>Chevrons: {selectedChallenge.chevrons}</Text>
                             <Text>Kills: {selectedChallenge.kills}</Text>
+                            <Text>Description: {selectedChallenge.description}</Text>
                             <Text>Past Challengers: {selectedChallenge.historicalRecord}</Text>
-                            {/* <Text>Description: {selectedChallenge.description}</Text> */}
                             <Center mt={4}>
                                 <Link href={selectedChallenge.screenshotLink} isExternal>
                                     Screenshot Link
