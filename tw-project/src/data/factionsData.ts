@@ -68,7 +68,7 @@ const factionChallenges: FactionChallenges[] = [
         kills: 0,
         title: "Not announced yet!",
         description: "Not announced yet!",
-        image: "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/640px-Flag_of_the_United_Kingdom.svg.png",
+        image: "https://img.freepik.com/free-vector/white-flag-wind-against-blue-sky-with-white-clouds-background-banner-abstract_1284-5383.jpg?w=2000",
         screenshotLink: "https://t3.ftcdn.net/jpg/04/17/86/40/360_F_417864022_gltC9P15AWWal6wXOK9CPcc5vaJWqlPN.jpg",
         factionIcon: "https://www.honga.net/totalwar/rome2/images/rome2/flags/baktria/mon_256.png",
     },
