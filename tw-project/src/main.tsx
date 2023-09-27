@@ -11,6 +11,11 @@ const theme = extendTheme({
         color: "white"
       }
     }
+  },
+  colors: {
+    chakra: {
+      borderColor: "gray.400" // Add your desired border color here
+    }
   }
 });
 
