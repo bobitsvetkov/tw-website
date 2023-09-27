@@ -184,7 +184,7 @@ const UnitChallengePage: React.FC = () => {
                                                     <AddIcon fontSize="12px" />
                                                 )}
                                             </AccordionButton>
-                                            <AccordionPanel pb={4} style={{ borderColor: "gray.400", borderWidth: "1px", borderStyle: "solid" }}>
+                                            <AccordionPanel pb={4} style={{ borderColor: "gray.400 !important", borderWidth: "1px !important", borderStyle: "solid !important" }}>
                                                 {isExpanded && <Text>{selectedChallenge.winner}</Text>}
                                             </AccordionPanel>
                                         </>
