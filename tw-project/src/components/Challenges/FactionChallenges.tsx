@@ -48,7 +48,7 @@ const FactionChallengesPage: React.FC = () => {
     return (
         <Box bg="gray.900" minHeight="100vh" p={6}>
             <Center mb={6}>
-                <Heading color="white">Unit Challenges</Heading>
+                <Heading color="white">Faction Challenges</Heading>
             </Center>
             {rows.map((row, rowIndex) => (
                 <Flex key={rowIndex} justify="center" alignItems="center">
