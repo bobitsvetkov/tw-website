@@ -140,7 +140,7 @@ const Home: React.FC = () => {
                         transition="0.3s"
                         _hover={{ bg: "gray.600" }}
                     >
-                        <Image src="https://media.istockphoto.com/id/925377622/photo/winner-championship-1-3.jpg?s=612x612&w=0&k=20&c=oHlfWIuuO7rD14pgatMr_BS-uhPTMV4bOmPhC0Xt3oY=" alt="Prizes" boxSize="300px" mx="auto" mb={4} />
+                        <Image src="https://cdn.akamai.steamstatic.com/steam/apps/850010/ss_2e62636842bec1a9c82fe91fcb59a87c2c7de1a0.1920x1080.jpg?t=1571743030" alt="Prizes" boxSize="300px" mx="auto" mb={4} />
                         <Text mt={2}>Prizes and Awards</Text>
                     </Box>
                 </Link>
