@@ -43,7 +43,7 @@ const ChallengesPage = () => {
                             style={cardImageStyle}
                         />
                         <Text fontSize="1rem" color="white" mt="0.5rem">
-                            These challenges are more focused on individual units rather than factions themselves. Have fun while you go through these fun challenges!
+                            These challenges are for more casual players. Attempt these challenges and show your proficiency with your favorite units in Rome 2!
                         </Text>
                     </Link>
                 </Box>
