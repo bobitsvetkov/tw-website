@@ -1,4 +1,4 @@
-import { Box, Image, Text, Grid, Icon } from "@chakra-ui/react";
+import { Box, Image, Text, Grid, Icon, Center } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { FaHeart, FaPaypal } from 'react-icons/fa';
 import logoImage from '../assets/logoImage.png'
@@ -158,10 +158,18 @@ const Home: React.FC = () => {
                         _hover={{ bg: "gray.600" }}
                     >
                         <Icon as={FaHeart} w={10} h={10} mb={2} />
-                        <Text fontWeight="bold" fontSize="xl" mb={2}>Support the continuous development of the site!</Text>
-                        <Text mb={2}>Help support the continuous development of this site. Your generosity keeps us going!</Text>
+                        <Text fontWeight="bold" fontSize="xl" mb={4}>
+                            Your Support Makes a Difference!
+                        </Text>
+                        <Center>
+                        <Text  mb={3}>
+                            It's thanks to supporters like you that we can keep pushing the boundaries and enhancing the user experience. Your trust and generosity inspire us to work tirelessly to bring you the best possible content and features.
+                        </Text>
+                        </Center>
                         <Icon as={FaPaypal} w={8} h={8} mt={4} />
-                        <Text mt={2}>Donate with PayPal</Text>
+                        <Text mt={2}>
+                            Donate with PayPal
+                        </Text>
                     </Box>
                 </a>
 
