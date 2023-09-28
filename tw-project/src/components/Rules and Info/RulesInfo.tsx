@@ -56,8 +56,8 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Pull through infractions: <List styleType="disc" ml={4}>
                             <ListItem>clearly intentional PT obtained by click-spamming = forfeit and -1.</ListItem>
                             <ListItem>unclear whether intentional or not = penalty to mod discretion.</ListItem>
-                            <ListItem>clearly accidental PT beneficial to the pushing-through team : -1.</ListItem>
-                            <ListItem>clearly accidental PT that didn't benefit the pushing-through team : no penalty.</ListItem>
+                            <ListItem>clearly accidental PT beneficial to the pushing-through team = -1.</ListItem>
+                            <ListItem>clearly accidental PT that didn't benefit the pushing-through team = no penalty.</ListItem>
                             <ListItem>Multiple instance of Pull through infarction may result in additional penalties, forfeit or DQ.</ListItem>
                         </List>
                         </ListItem>
