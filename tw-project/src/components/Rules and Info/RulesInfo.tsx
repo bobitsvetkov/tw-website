@@ -53,7 +53,14 @@ const RulesInfo: React.FC = () => {
                 <ListItem>
                     <Text fontSize="lg" fontWeight="semibold">Pull Through:</Text>
                     <UnorderedList mt={1} pl={5}>
-                        <ListItem>Pull through infractions: first instance - penalty at mods discretion, second instance -1, third occurrence results in forfeit for that battle.</ListItem>
+                        <ListItem>Pull through infractions: <List styleType="disc" ml={4}>
+                            <ListItem>clearly intentional PT obtained by click-spamming = forfeit and -1.</ListItem>
+                            <ListItem>unclear whether intentional or not = penalty to mod discretion.</ListItem>
+                            <ListItem>clearly accidental PT beneficial to the pushing-through team : -1.</ListItem>
+                            <ListItem>clearly accidental PT that didn't benefit the pushing-through team : no penalty.</ListItem>
+                            <ListItem>Multiple instance of Pull through infarction may result in additional penalties, forfeit or DQ.</ListItem>
+                        </List>
+                        </ListItem>
                         <ListItem>Units pulling or pushing through other units is not permitted.</ListItem>
                         <ListItem>However, there are some exceptions: elephants/chariots can pull through any unit that isn't already in Shieldwall, hoplite wall, shield screen, and square formations.</ListItem>
                         <ListItem>Cav can pull through archers, pleb/slave units, and loose formation units.</ListItem>
@@ -61,17 +68,6 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Infantry may not pull through archers or any other unit with the exception of routed units. Not wavering, Routed.</ListItem>
                         <ListItem>Cav cannot pull through other cav.</ListItem>
                         <ListItem>Pulling through intentionally to win despite the penalties is a forfeit.</ListItem>
-                    </UnorderedList>
-                </ListItem>
-                <Divider my={4} />
-                <ListItem>
-                    <Text fontSize="lg" fontWeight="semibold"> Pull through Infractions: </Text>
-                    <UnorderedList mt={1} pl={5}>
-                        <ListItem> clearly intentional PT obtained by click-spamming = forfeit and -1.</ListItem>
-                        <ListItem>unclear whether intentional or not = penalty to mod discretion.</ListItem>
-                        <ListItem>clearly accidental PT beneficial to the pushing-through team : -1.</ListItem>
-                        <ListItem>clearly accidental PT that didn't benefit the pushing-through team : no penalty.</ListItem>
-                        <ListItem>Multiple instance of Pull through infarction may result in additional penalties, forfeit or DQ.</ListItem>
                     </UnorderedList>
                 </ListItem>
                 <Divider my={4} />
