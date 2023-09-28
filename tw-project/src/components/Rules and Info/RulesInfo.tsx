@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Text, ListItem, OrderedList, UnorderedList, Divider } from "@chakra-ui/react";
+import { Box, Center, Heading, Text, ListItem, OrderedList, UnorderedList, Divider, List } from "@chakra-ui/react";
 import { useEffect } from 'react';
 const RulesInfo: React.FC = () => {
     useEffect(() => {
@@ -99,7 +99,7 @@ const RulesInfo: React.FC = () => {
                         <ListItem>No tort/wall exploit.</ListItem>
                         <ListItem>No infinite charge bonus exploit.</ListItem>
                         <ListItem>No glitching torts or greek city siege towers into barb settlements.</ListItem>
-                        <ListItem>Galleys are banned.</ListItem>
+                        <ListItem>No Galleys.</ListItem>
                         <ListItem>No other exploits. Ask a moderator if you are unsure if something is an exploit.</ListItem>
                     </UnorderedList>
                 </ListItem>
@@ -198,7 +198,18 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Each Group plays a round robin so each team plays all the other teams in their group once.</ListItem>
                         <ListItem>The top team by points in each group advances to the playoff round.</ListItem>
                         <ListItem>Playoff position: Group winners will be the 1-8 seeds in order of points. Group runner-ups will be the 9-16 seeds. Then, two third place teams with the most points will be the 15 and 16 seeds.</ListItem>
-                        <ListItem>Players are NOT allowed to go for a tie. Teams must go for the win.</ListItem>
+                        <ListItem>Land Battles are ONLY allowed in Group Stage.</ListItem>
+                        <ListItem>
+                            Land battles will be fought according to these rules:
+                            <List styleType="disc" ml={4}>
+                                <ListItem>no art</ListItem>
+                                <ListItem>max 4 horse archers/jav cav</ListItem>
+                                <ListItem>max 2 ele/char per team</ListItem>
+                                <ListItem>max 5 of the same unit</ListItem>
+                                <ListItem>Both players are ATTACKERS</ListItem>
+                                <ListItem>Map will be Mons regius(attack direction east)</ListItem>
+                            </List>
+                        </ListItem>
                         <ListItem>A team with NO wins or negative points is ineligible for playoffs.</ListItem>
                     </UnorderedList>
                 </ListItem>
