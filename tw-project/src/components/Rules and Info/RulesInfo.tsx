@@ -208,7 +208,7 @@ const RulesInfo: React.FC = () => {
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Only factions which were unused during the Group stage are allowed in the playoffs.</ListItem>
                         <ListItem>Each team will play an attack and a defense.</ListItem>
-                        <ListItem>Points determine the winning team. Tie will result in a land battle.</ListItem>
+                        <ListItem>Points determine the winning team.</ListItem>
                         <ListItem>Points do not carry over from Group play to playoffs.</ListItem>
                         <ListItem>Points acquired during playoffs do not carry over from round to round.</ListItem>
                         <ListItem>Playoff maps will be assigned for each round and can be found on the schedule.</ListItem>
@@ -226,9 +226,13 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Late to scheduled matches (15 mins) = -1 pts.</ListItem>
                         <ListItem>Additional points are obtained through your team's faction selection (see faction tier list in discord) </ListItem>
                         <ListItem>Play all your group stage matches = +2 pts (teams with forfeit losses are ineligible for this)</ListItem>
-                        <ListItem>One army bringing more than 7 of the same unit = -1 pt for each extra unit</ListItem>
+                        <ListItem>One army bringing more than 8 of the same unit = -1 pt for each extra unit</ListItem>
                         <ListItem> Other rule infractions may be subject to point penalties as well at the discretion of the moderators.</ListItem>
-                        <ListItem>Pull through infractions: first instance - penalty at mods discretion, second instance -1, third occurrence results in forfeit.</ListItem>
+                        <ListItem>Pull through infractions: clearly intentional PT obtained by click-spamming = forfeit and -1;
+                           unclear whether intentional or not = penalty to mod discretion;
+                           clearly accidental PT beneficial to the pushing through team = -1;
+                           clearly accidental PT that didn't benefit the pushing through team = no penalty;
+                        </ListItem>
                         <ListItem>Conceding or leaving a battle before before it ends naturally (considered a rage quit) = -1 point. Recurring instances of this will result in being kicked from the league and blacklisted.</ListItem>
                     </UnorderedList>
                 </ListItem>
