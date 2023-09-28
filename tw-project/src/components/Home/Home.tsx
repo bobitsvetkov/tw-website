@@ -145,7 +145,7 @@ const Home: React.FC = () => {
                     </Box>
                 </Link>
 
-                <a href="https://revolut.me/borislocc9" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.paypal.com/paypalme/bobitsv" target="_blank" rel="noopener noreferrer">
                     <Box
                         p={4}
                         h="370px"
@@ -158,11 +158,10 @@ const Home: React.FC = () => {
                         _hover={{ bg: "gray.600" }}
                     >
                         <Icon as={FaHeart} w={10} h={10} mb={2} />
-                        <Text fontWeight="bold" fontSize="xl" mb={2}>Support the Creator of the Site!</Text>
+                        <Text fontWeight="bold" fontSize="xl" mb={2}>Support the continuous development of the site!</Text>
                         <Text mb={2}>Help support the continuous development of this site. Your generosity keeps us going!</Text>
-                        <Text mt={2} fontStyle="italic">"In Bulgaria, we have a saying, I would rather throw up blood than give refunds, so you better not ask for refunds! 😆"</Text>
                         <Icon as={FaPaypal} w={8} h={8} mt={4} />
-                        <Text mt={2}>Donate with Revolut</Text>
+                        <Text mt={2}>Donate with PayPal</Text>
                     </Box>
                 </a>
 
