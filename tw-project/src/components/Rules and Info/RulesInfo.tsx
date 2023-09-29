@@ -222,7 +222,7 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Not playing at least 1 match-up (2 battles) per week = -1 pt.</ListItem>
                         <ListItem>Getting map selection wrong = -1 pt for both teams.</ListItem>
                         <ListItem>Using the same faction twice = -1 and an additional faction will be forfeited at random.</ListItem>
-                        <ListItem>Late to scheduled matches (15 mins) = -1 pts.</ListItem>
+                        <ListItem>Late to scheduled matches (10 mins) = -1 pts.</ListItem>
                         <ListItem>Additional points are obtained through your team's faction selection (see faction tier list in discord) </ListItem>
                         <ListItem>Play all your group stage matches = +2 pts (teams with forfeit losses are ineligible for this)</ListItem>
                         <ListItem>One army bringing more than 8 of the same unit = -1 pt for each extra unit</ListItem>
