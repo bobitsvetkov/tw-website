@@ -57,17 +57,40 @@ const Streamers: React.FC = () => {
                         key={index}
                         as="article"
                         p={4}
-                        borderRadius="md"
+                        borderRadius="lg"
                         textAlign="center"
                         bg="gray.700"
                         color="white"
                         boxShadow="lg"
                         transition="0.3s"
-                        _hover={{ boxShadow: 'xl', transform: 'scale(1.05)' }}
+                        _hover={{
+                            boxShadow: "lg",
+                            transform: "scale(1.05)",
+                            background: 'gray.600',
+                        }}
                     >
-                        <Image src={streamer.image} alt={streamer.name} boxSize="200px" mx="auto" mb={4} />
-                        <Text mb={4}>{streamer.description}</Text>
-                        <LinkOverlay href={`https://www.twitch.tv/${streamer.name}`} isExternal fontWeight="bold">
+                        <Image
+                            src={streamer.image}
+                            alt={streamer.name}
+                            boxSize="200px"
+                            mx="auto"
+                            mb={4}
+                            borderRadius="full" // Rounded image
+                            boxShadow="md" // Image shadow
+                        />
+                        <Text fontSize="xl" fontWeight="semibold" mb={4}>
+                            {streamer.name}
+                        </Text>
+                        <Text fontSize="md" mb={4}>
+                            {streamer.description}
+                        </Text>
+                        <LinkOverlay
+                            href={`https://www.twitch.tv/${streamer.name}`}
+                            isExternal
+                            fontWeight="bold"
+                            color="blue.300"
+                            _hover={{ color: "blue.500", textDecoration: "underline" }}
+                        >
                             Watch on Twitch
                         </LinkOverlay>
                     </LinkBox>
@@ -75,6 +98,6 @@ const Streamers: React.FC = () => {
             </Grid>
         </Box>
     );
-}
+};
 
 export default Streamers;

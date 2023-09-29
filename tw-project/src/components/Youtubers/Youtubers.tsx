@@ -58,7 +58,7 @@ If you enjoy funny and personal commentary during streams(and some failures) thi
         },
     ];
     return (
-        <Box bg="gray.800" minHeight="100vh" color="white">
+        <Box bg="gray.800" minHeight="100vh" color="white" p={4}>
             <Center mb={6}>
                 <Heading color="white">Check out our Youtubers!</Heading>
             </Center>
@@ -72,17 +72,40 @@ If you enjoy funny and personal commentary during streams(and some failures) thi
                         key={index}
                         as="article"
                         p={4}
-                        borderRadius="md"
+                        borderRadius="lg"
                         textAlign="center"
                         bg="gray.700"
                         color="white"
                         boxShadow="lg"
                         transition="0.3s"
-                        _hover={{ boxShadow: 'xl', transform: 'scale(1.05)' }}
+                        _hover={{
+                            boxShadow: 'xl',
+                            transform: 'scale(1.05)',
+                            background: 'gray.600',
+                        }}
                     >
-                        <Image src={youtuber.image} alt={youtuber.name} boxSize="300px" mx="auto" mb={4} />
-                        <Text mb={4}>{youtuber.description}</Text>
-                        <LinkOverlay href={`https://www.youtube.com/${youtuber.name}`} isExternal fontWeight="bold">
+                        <Image
+                            src={youtuber.image}
+                            alt={youtuber.name}
+                            boxSize="200px"
+                            mx="auto"
+                            mb={4}
+                            borderRadius="full" // Rounded image
+                            boxShadow="md" // Image shadow
+                        />
+                        <Text fontSize="xl" fontWeight="semibold" mb={4}>
+                            {youtuber.name}
+                        </Text>
+                        <Text fontSize="md" mb={4}>
+                            {youtuber.description}
+                        </Text>
+                        <LinkOverlay
+                            href={`https://www.youtube.com/${youtuber.name}`}
+                            isExternal
+                            fontWeight="bold"
+                            color="blue.300"
+                            _hover={{ color: "blue.500", textDecoration: "underline" }}
+                        >
                             Watch on YouTube
                         </LinkOverlay>
                     </LinkBox>
