@@ -53,14 +53,6 @@ const RulesInfo: React.FC = () => {
                 <ListItem>
                     <Text fontSize="lg" fontWeight="semibold">Pull Through:</Text>
                     <UnorderedList mt={1} pl={5}>
-                        <ListItem>Pull through infractions: <List styleType="disc" ml={4}>
-                            <ListItem>clearly intentional PT obtained by click-spamming = forfeit and -1.</ListItem>
-                            <ListItem>unclear whether intentional or not = penalty to mod discretion.</ListItem>
-                            <ListItem>clearly accidental PT beneficial to the pushing-through team = -1.</ListItem>
-                            <ListItem>clearly accidental PT that didn't benefit the pushing-through team = no penalty.</ListItem>
-                            <ListItem>Multiple instance of Pull through infarction may result in additional penalties, forfeit or DQ.</ListItem>
-                        </List>
-                        </ListItem>
                         <ListItem>Units pulling or pushing through other units is not permitted.</ListItem>
                         <ListItem>However, there are some exceptions: elephants/chariots can pull through any unit that isn't already in Shieldwall, hoplite wall, shield screen, and square formations.</ListItem>
                         <ListItem>Cav can pull through archers, pleb/slave units, and loose formation units.</ListItem>
@@ -161,8 +153,8 @@ const RulesInfo: React.FC = () => {
                     <Text fontSize="lg" fontWeight="semibold">Rules for not arriving on matches on time:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>If both teams agreed on a time and there is proof of it, you are expected to show up.</ListItem>
-                        <ListItem>Teams need to wait at least 15 min for their opponent to show up. They may wait up to 30 min. If a team arrives over 15 minutes late but less than 30, they will receive a -1 point penalty
-                            (unless both teams and mod council agrees players can wait for up to 30 minutes without penalty).</ListItem>
+                        <ListItem>Teams need to wait at least 10 minutes for their opponent to show up. They may wait up to 30 min. If a team arrives over 10 minutes late but less than 30, they will receive a -1 point penalty
+                            (unless both teams and mod council agree players can wait for up to 30 minutes without penalty for the team that is being late).</ListItem>
                         <ListItem>After the time limit, the attack of the team that showed up will be a forfeit victory. The second battle will be rescheduled.</ListItem>
                         <ListItem>In the rescheduled battle, the “winners” from the forfeit are by default the defenders.</ListItem>
                         <ListItem>If 24 hrs notice or more is given then no forfeit occurs. A penalty of -1 or more may be enforced against the team that needed to reschedule.</ListItem>
@@ -194,16 +186,14 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Each Group plays a round robin so each team plays all the other teams in their group once.</ListItem>
                         <ListItem>The top team by points in each group advances to the playoff round.</ListItem>
                         <ListItem>Playoff position: Group winners will be the 1-8 seeds in order of points. Group runner-ups will be the 9-16 seeds. Then, two third place teams with the most points will be the 15 and 16 seeds.</ListItem>
-                        <ListItem>Land Battles are ONLY allowed in Group Stage.</ListItem>
                         <ListItem>
-                            Land battles will be fought according to these rules:
-                            <List styleType="disc" ml={4}>
-                                <ListItem>no art</ListItem>
-                                <ListItem>max 4 horse archers/jav cav</ListItem>
-                                <ListItem>max 2 ele/char per team</ListItem>
-                                <ListItem>max 5 of the same unit</ListItem>
-                                <ListItem>Both players are ATTACKERS</ListItem>
-                                <ListItem>Map will be Mons regius(attack direction east)</ListItem>
+                            In the event of a tie (pts) between two (or more) teams, the tiebreakers will be as follows:
+                            <List styleType="decimal" ml={4}>
+                                <ListItem>Win/Loss</ListItem>
+                                <ListItem>Head to head record (if in the same group)</ListItem>
+                                <ListItem>Total amount of points of factions used against them</ListItem>
+                                <ListItem>Total points of factions used</ListItem>
+                                <ListItem>Coin toss</ListItem>
                             </List>
                         </ListItem>
                         <ListItem>A team with NO wins or negative points is ineligible for playoffs.</ListItem>
@@ -235,10 +225,13 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Play all your group stage matches = +2 pts (teams with forfeit losses are ineligible for this)</ListItem>
                         <ListItem>One army bringing more than 8 of the same unit = -1 pt for each extra unit</ListItem>
                         <ListItem> Other rule infractions may be subject to point penalties as well at the discretion of the moderators.</ListItem>
-                        <ListItem>Pull through infractions: clearly intentional PT obtained by click-spamming = forfeit and -1;
-                           unclear whether intentional or not = penalty to mod discretion;
-                           clearly accidental PT beneficial to the pushing through team = -1;
-                           clearly accidental PT that didn't benefit the pushing through team = no penalty;
+                        <ListItem>Pull through infractions: <List styleType="disc" ml={4}>
+                            <ListItem>clearly intentional PT obtained by click-spamming = forfeit and -1.</ListItem>
+                            <ListItem>unclear whether intentional or not = penalty to mod discretion.</ListItem>
+                            <ListItem>clearly accidental PT beneficial to the pushing-through team = -1.</ListItem>
+                            <ListItem>clearly accidental PT that didn't benefit the pushing-through team = no penalty.</ListItem>
+                            <ListItem>Multiple instance of Pull through infarction may result in additional penalties, forfeit or DQ.</ListItem>
+                        </List>
                         </ListItem>
                         <ListItem>Conceding or leaving a battle before before it ends naturally (considered a rage quit) = -1 point. Recurring instances of this will result in being kicked from the league and blacklisted.</ListItem>
                     </UnorderedList>
