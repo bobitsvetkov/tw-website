@@ -205,7 +205,9 @@ const RulesInfo: React.FC = () => {
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Only factions which were unused during the Group stage are allowed in the playoffs.</ListItem>
                         <ListItem>Each team will play an attack and a defense.</ListItem>
-                        <ListItem>Points determine the winning team.</ListItem>
+                        <ListItem>Points determine the winning team.Teams cannot go for a tie.
+                        The team that loses the first battle must go for at least one more point than than the team that won the first battle got.
+                        </ListItem>
                         <ListItem>Points do not carry over from Group play to playoffs.</ListItem>
                         <ListItem>Points acquired during playoffs do not carry over from round to round.</ListItem>
                         <ListItem>Playoff maps will be assigned for each round and can be found on the schedule.</ListItem>
@@ -234,6 +236,7 @@ const RulesInfo: React.FC = () => {
                         </List>
                         </ListItem>
                         <ListItem>Conceding or leaving a battle before before it ends naturally (considered a rage quit) = -1 point. Recurring instances of this will result in being kicked from the league and blacklisted.</ListItem>
+                        <ListItem> Attackers are not permitted to run units away at the end of the game in order to influence K/D or to prolong the game unnecessarily, doing so may result in a -1 penalty.</ListItem>
                     </UnorderedList>
                 </ListItem>
                 <Divider my={4} />
@@ -258,8 +261,8 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Making false accusations about rule infractions = 2 point penalty.</ListItem>
                         <ListItem>Rule breaking accusations must be substantiated with evidence: screen shots, timestamp, and location on the battlefield.</ListItem>
                         <ListItem>Purposely forfeiting to deny your opponent the chance to get more than 3 points from a battle is also grounds for disqualification.</ListItem>
-                        <ListItem>Spying on rival teams by joining their passworded lobby will result in player DQ</ListItem>
-                        <ListItem>“Leaking” rival team strats and faction selections to other teams will result in player DQ</ListItem>
+                        <ListItem>Spying on rival teams by joining their passworded lobby will result in the offending player being disqualified from the league.</ListItem>
+                        <ListItem>“Leaking” rival team strats and faction selections to other teams will result in the offending player being disqualified from the league.</ListItem>
 
                     </UnorderedList>
                 </ListItem>
@@ -271,11 +274,13 @@ const RulesInfo: React.FC = () => {
                             will range from warning to DQ, depending on the severity of the transgression.
                         </ListItem>
                         <ListItem>For the sake of clarity here are some examples of unsportsmanlike conduct:</ListItem>
+                        <List styleType="decimal" ml={4}>
                         <ListItem>Conceding defeat / leaving the battle early</ListItem>
                         <ListItem>Moving entire army once the 60 sec countdown begins</ListItem>
-                        <ListItem>Pushing drama (such as continuing to push drama long after mod council has made a decision)</ListItem>
+                        <ListItem>Prolonging drama (such as continuing to push drama long after mod council has made a decision)</ListItem>
                         <ListItem>Intentional Pushthrough</ListItem>
                         <ListItem>Leaking strat/factions/army comps</ListItem>
+                        </List>
                     </UnorderedList>
                 </ListItem>
                 <ListItem>
