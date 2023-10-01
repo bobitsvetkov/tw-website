@@ -185,7 +185,7 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Games can be played anytime that teams can arrange. Streaming arrangements can be made with the discord moderators and participating streamers.</ListItem>
                         <ListItem>Each Group plays a round robin so each team plays all the other teams in their group once.</ListItem>
                         <ListItem>The top team by points in each group advances to the playoff round.</ListItem>
-                        <ListItem>Playoff position: Group winners will be the 1-8 seeds in order of points. Group runner-ups will be the 9-16 seeds. Then, two third place teams with the most points will be the 15 and 16 seeds.</ListItem>
+                        <ListItem>Playoff position: Group winners will be the 1-8 seeds in order of points. Group runner-ups will be the 9-16 seeds.</ListItem>
                         <ListItem>
                             In the event of a tie (pts) between two (or more) teams, the tiebreakers will be as follows:
                             <List styleType="decimal" ml={4}>
