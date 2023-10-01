@@ -1,8 +1,6 @@
-import { Box, Image, Text, Grid, Icon, Center } from "@chakra-ui/react";
+import { Box, Image, Text, Grid,} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { FaHeart, FaPaypal } from 'react-icons/fa';
 import logoImage from '../assets/logoImage.png'
-import { FaBroadcastTower, FaVideo } from 'react-icons/fa';
 import FactionTierCard from "../Faction Tier List/TierCard";
 import DLCCard from "../DLC/DLCCard";
 const Home: React.FC = () => {
@@ -148,7 +146,6 @@ const Home: React.FC = () => {
                 <a href="https://www.paypal.com/paypalme/bobitsv" target="_blank" rel="noopener noreferrer">
                     <Box
                         p={4}
-                        h="370px"
                         borderRadius="md"
                         textAlign="center"
                         bg="gray.700"
@@ -157,19 +154,8 @@ const Home: React.FC = () => {
                         transition="0.3s"
                         _hover={{ bg: "gray.600" }}
                     >
-                        <Icon as={FaHeart} w={10} h={10} mb={2} />
-                        <Text fontWeight="bold" fontSize="xl" mb={4}>
-                            Your Support Makes a Difference!
-                        </Text>
-                        <Center>
-                        <Text  mb={3}>
-                            It's thanks to supporters like you that we can keep pushing the boundaries and enhancing the user experience. Your trust and generosity inspire us to work tirelessly to bring you the best possible content and features.
-                        </Text>
-                        </Center>
-                        <Icon as={FaPaypal} w={8} h={8} mt={4} />
-                        <Text mt={2}>
-                            Donate with PayPal
-                        </Text>
+                        <Image src="https://i.chzbgr.com/full/9712976640/h04132010/person-wrote-this-code-only-god-and-understood-did-now-only-god-knows" alt="programmermeme" boxSize="300px" mx="auto" mb={4} />
+                        <Text mt={2}>Support The Creator Of This Website!</Text>
                     </Box>
                 </a>
 
@@ -177,7 +163,6 @@ const Home: React.FC = () => {
                     <Box
                         p={4}
                         borderRadius="md"
-                        h="370px"
                         textAlign="center"
                         bg="gray.700"
                         color="white"
@@ -185,12 +170,8 @@ const Home: React.FC = () => {
                         transition="0.3s"
                         _hover={{ bg: "gray.600" }}
                     >
-                        <Icon as={FaBroadcastTower} w={10} h={10} mb={2} />
-                        <Text fontWeight="bold" fontSize="xl" mb={2}>Support MarketableSkills!</Text>
-                        <Text mb={2}>Love the content? Show your appreciation and keep the streams coming!</Text>
-                        <Text fontSize="sm" mb={2}>MarketableSkills is dedicated to bringing you top-notch content every week. Donations help improve the stream quality, and support the continuous hard work!</Text>
-                        <Icon as={FaVideo} w={8} h={8} mt={2} /> {/* This is the icon change for Streamlabs */}
-                        <Text mt={2}>Donate to MarketableSkills with Streamlabs</Text>
+                        <Image src="https://yt3.googleusercontent.com/ytc/AOPolaRBeU8n7E1tWnU42r4dfw20GdDaSG4IY3lGyFFg=s900-c-k-c0x00ffffff-no-rj" alt="marketimg" boxSize="300px" mx="auto" mb={4} />
+                        <Text mt={2}>Support MarketableSkills!</Text>
                     </Box>
                 </a>
                 <Link to="/guides">
