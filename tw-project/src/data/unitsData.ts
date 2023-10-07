@@ -164,7 +164,7 @@ const unitChallenges: UnitChallenges[] = [
         kills: 675,
         title: "Mini Legionary",
         description: "Min 1 chevron on 4 different galatian swords(CAN BE DONE ON DEFENSE)",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1182px-Flag_of_Belgium.svg.png",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/007/323/917/small/belgium-national-flag-design-belgium-flag-3d-waving-background-illustration-free-vector.jpg",
         screenshotLink: "https://cdn.discordapp.com/attachments/1154521158583062608/1159858587808567316/image.png?ex=65328d7c&is=6520187c&hm=c73b5408eb62c599bb8f423528ff60d2187ece3527d72b0194590b0ac4b93349&",
         unitIcon: "https://www.honga.net/totalwar/rome2/gen_images/unit_icon/rome2/rom_galatia/Cel_Galatian_Swords.png"
     },
