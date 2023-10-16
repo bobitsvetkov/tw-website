@@ -95,7 +95,7 @@ const Home: React.FC = () => {
                     </Box>
                 </Link>
 
-                <a href="https://docs.google.com/spreadsheets/d/1SZISO_t2vM2TPl4i6PPdHs2WF_A5AgBNM_dhXBPe-78/edit#gid=160152427" target="_blank" rel="noopener noreferrer">
+                <a href="https://docs.google.com/spreadsheets/d/1d3U_wppVKXpeXySeWJTJwtSJnURksYogMb-ktrzuRek/edit#gid=160152427" target="_blank" rel="noopener noreferrer">
                     <Box
                         p={4}
                         borderRadius="md"
