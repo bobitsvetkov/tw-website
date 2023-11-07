@@ -16,14 +16,10 @@ const Prizes: React.FC = () => {
                         "Lord of the Meme lords: awarded to the greatest TWL meme creator.",
                         "Meme lord: Awarded to our top 2 meme creators.",
                         "Highest K/D simp: Fighter with the Best K/D across the Group Stage",
-                        "Playoff MVP: Fighter determined by Mod vote to be the Greatest playoff performer.",
-                        "The AB badge: Awarded for biggest fail in the season.",
-                        "The Petard: Awarded to the fighter with the most…uh….interesting comps and strategies",
                         "Champion of the Losers: 3rd place finisher.",
                         "6th man of the year: Best sub.",
                         "Biggest Backpack: for the hardest carrying teammate.",
                         "Best lagger: For the player that lags or drops the most during a season.",
-                        "Group Stage MVP: Fighter determined by Mod vote to be the best Group Stage performer."
                     ].map((item, index) => (
                         <ListItem key={index} textAlign="center">
                             {item}
@@ -49,10 +45,7 @@ const Prizes: React.FC = () => {
 
                 <List mb={5} spacing={2} styleType="none">
                     {[
-                        "Top of the group: $30",
-                        "Highest K/D: $20",
-                        "Most chevrons per game: $20",
-                        "Lord of the Meme lords: $15",
+                        "Top of the group: $25",
                     ].map((item, index) => (
                         <ListItem key={index} textAlign="center">
                             {item}
