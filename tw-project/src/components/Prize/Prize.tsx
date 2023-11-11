@@ -18,6 +18,7 @@ const Prizes: React.FC = () => {
                         "Highest K/D simp: Fighter with the Best K/D across the Group Stage",
                         "Champion of the Losers: 3rd place finisher.",
                         "6th man of the year: Best sub.",
+                        "Petard: Awarded to the fighter with the most cringe inducing comps and strategies",
                         "Biggest Backpack: for the hardest carrying teammate.",
                         "Best lagger: For the player that lags or drops the most during a season.",
                     ].map((item, index) => (
