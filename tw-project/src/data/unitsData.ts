@@ -86,14 +86,14 @@ const unitChallenges: UnitChallenges[] = [
     },
     {
         id: "8",
-        winner: "Not claimed yet!",
+        winner: "Desttro",
         historicalRecord: "This list is empty. You can help by expanding it!",
-        chevrons: 0,
-        kills: 0,
+        chevrons: 10,
+        kills: 1376,
         title: "Sword Bastard",
         description: "Min 5 sword masters with a double chevron each",
-        image: "https://img.freepik.com/free-vector/white-flag-wind-against-blue-sky-with-white-clouds-background-banner-abstract_1284-5383.jpg?w=2000",
-        screenshotLink: "https://t3.ftcdn.net/jpg/04/17/86/40/360_F_417864022_gltC9P15AWWal6wXOK9CPcc5vaJWqlPN.jpg",
+        image: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png",
+        screenshotLink: "https://cdn.discordapp.com/attachments/1154521158583062608/1168761036728451144/20231031005812_1.jpg?ex=656ea009&is=655c2b09&hm=cce8a67d816e3c6b94a09bf94649f8695862905f0e4fb015e4325ff276abb581&",
         unitIcon: "https://www.honga.net/totalwar/rome2/gen_images/unit_icon/rome2/rom_suebi/Ger_Sword_Masters.png"
     },
     {
@@ -134,14 +134,14 @@ const unitChallenges: UnitChallenges[] = [
     },
     {
         id: "12",
-        winner: "Not claimed yet!",
+        winner: "Rhunnic Warlord",
         historicalRecord: "This list is empty. You can help by expanding it!",
-        chevrons: 0,
-        kills: 0,
+        chevrons: 4,
+        kills: 426,
         title: "The Janissary",
         description: "Min 1 chevron on each of the 2 cappadocian cavs",
-        image: "https://img.freepik.com/free-vector/white-flag-wind-against-blue-sky-with-white-clouds-background-banner-abstract_1284-5383.jpg?w=2000",
-        screenshotLink: "https://t3.ftcdn.net/jpg/04/17/86/40/360_F_417864022_gltC9P15AWWal6wXOK9CPcc5vaJWqlPN.jpg",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png",
+        screenshotLink: "https://cdn.discordapp.com/attachments/1154521158583062608/1176609260604489878/20231121194310_2.jpg?ex=656f7dc4&is=655d08c4&hm=eadd1af5b1ee4aecdcf61708d1a390397b7b275beadc3b094f4ec4255b4345e8&",
         unitIcon: "https://www.honga.net/totalwar/rome2/gen_images/unit_icon/rome2/rom_pontus/Eas_Cappadocian_Cav.png"
     },
     {
