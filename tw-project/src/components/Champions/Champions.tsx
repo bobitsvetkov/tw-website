@@ -77,6 +77,16 @@ const Champions: React.FC = () => {
             mostChevrons: "1. jbarbs(10.42) 2. Hyena(10.07) 3. Desttro(9.42)",
             finalsLink: "https://www.youtube.com/watch?v=Zr7FCWC9D2U"
         },
+        {
+            season: "Season 9",
+            winner: "Best or Bust ( Seneys and Berry, Sub: Bobi)",
+            runnerUp: "Random X (Hermes and Pedrosaur, Sub: Foxas Bat)",
+            mostPoints: "Iron Warriors (Agiad Legacy and Ironfist20, Sub: Foxas Bat: 4.5 PPG)",
+            thirdPlace: "I for Imperium (Illyria and Hami, Sub: HonoredChief)",
+            topKD: "1. Bobi (2.23) 2. Berry (1.19) 3. Hyena (1.15)",
+            mostChevrons: "1. Hyena(12.00) 2. Mia(12.00) 3. Bobi(11.00)",
+            finalsLink: "https://www.twitch.tv/videos/1998531739"
+        },
     ];
     const cardBg = "gray.700"; // Lighter shade of gray for the card
     const cardColor = "white"; // White text color
