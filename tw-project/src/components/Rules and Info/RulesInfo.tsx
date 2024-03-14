@@ -38,6 +38,7 @@ const RulesInfo: React.FC = () => {
                         <ListItem>4 missile units (slinger, archers, archer cav) + 1 “javie” unit (peltast, javelinmen, agrianian, javie cav or horse archer) per player</ListItem>
                         <ListItem>8 of the same unit per player (i.e. can`t bring 9 thorax swordsmen)</ListItem>
                         <ListItem>2 eles/chariots per team</ListItem>
+                        <ListItem>3 camel cataphracts per team (Royal Camel Archers, Camel Cataphracts (Parthia & Saba) and Ma`rib Camels)</ListItem>
                     </UnorderedList>
                 </ListItem>
                 <Divider my={4} />
