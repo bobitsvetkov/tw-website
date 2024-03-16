@@ -35,7 +35,7 @@ const RulesInfo: React.FC = () => {
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>1 artillery piece per player on attack. Max 1 of each artillery type (ballista/onager and scorpion) per team on attack. On defense, only 1 artillery can be brought per team (only scorpions may be used inside the settlement).</ListItem>
                         <ListItem>2 pikes per player</ListItem>
-                        <ListItem>4 missile units (slinger, archers, archer cav) + 1 “javie” unit (peltast, javelinmen, agrianian, javie cav or horse archer) per player</ListItem>
+                        <ListItem>4 missile units (slinger, archers) + 1 “javie” unit (peltast, javelinmen, agrianian, javie cav or horse archer) per player</ListItem>
                         <ListItem>8 of the same unit per player (i.e. can`t bring 9 thorax swordsmen)</ListItem>
                         <ListItem>2 eles/chariots per team</ListItem>
                         <ListItem>3 camel cataphracts per team (Royal Camel Archers, Camel Cataphracts (Parthia & Saba) and Ma`rib Camels)</ListItem>

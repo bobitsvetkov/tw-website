@@ -76,8 +76,8 @@ export const seasons = [
         runnerUp: "Random X (Hermes and Pedrosaur, Sub: Foxas Bat)",
         mostPoints: "Iron Warriors (Agiad Legacy and Ironfist20, Sub: Foxas Bat: 4.5 PPG)",
         thirdPlace: "I for Imperium (Illyria and Hami, Sub: HonoredChief)",
-        topKD: "1. Bobi (2.23) 2. Berry (1.19) 3. Hyena (1.15)",
-        mostChevrons: "1. Hyena(12.00) 2. Mia(12.00) 3. Bobi(11.00)",
-        finalsLink: "https://www.twitch.tv/videos/1998531739"
+        topKD: "1. jbarbs  (1.60) 2. Berry (1.35) 3. Hyena (1.31)",
+        mostChevrons: "1. Donald (11.29) 2. Berry (10.69) 3. Hyena (10.50)",
+        finalsLink: "https://www.youtube.com/watch?v=-ax5rKWpSQ8"
     },
 ];
