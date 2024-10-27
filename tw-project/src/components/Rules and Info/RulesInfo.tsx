@@ -33,12 +33,12 @@ const RulesInfo: React.FC = () => {
                 <ListItem>
                     <Text fontSize="lg" fontWeight="semibold">Max unit types:</Text>
                     <UnorderedList mt={1} pl={5}>
-                        <ListItem>1 artillery piece per player on attack. Max 1 of each artillery type (ballista/onager and scorpion) per team on attack. On defense, only 1 artillery can be brought per team (only scorpions may be used inside the settlement).</ListItem>
+                        <ListItem>Attackers may bring 1 Giant ballista and 1 scorpion, defenders may bring 1 scorpion</ListItem>
                         <ListItem>2 pikes per player</ListItem>
                         <ListItem>4 missile units (slinger, archers) + 1 “javie” unit (peltast, javelinmen, agrianian, javie cav or horse archer) per player</ListItem>
                         <ListItem>8 of the same unit per player (i.e. can`t bring 9 thorax swordsmen)</ListItem>
                         <ListItem>2 eles/chariots per team</ListItem>
-                        <ListItem>3 camel cataphracts per team (Royal Camel Archers, Camel Cataphracts (Parthia & Saba) and Ma`rib Camels)</ListItem>
+                        <ListItem>4 camel cataphracts per team (Royal Camel Archers, Camel Cataphracts (Parthia & Saba) and Ma`rib Camels)</ListItem>
                     </UnorderedList>
                 </ListItem>
                 <Divider my={4} />
@@ -97,7 +97,8 @@ const RulesInfo: React.FC = () => {
                 <ListItem>
                     <Text fontSize="lg" fontWeight="semibold">Artillery:</Text>
                     <UnorderedList mt={1} pl={5}>
-                        <ListItem>One artillery piece per player on attack (only one ballista/onager per team) Only one artillery per team is allowed on defense.</ListItem>
+                        {/* <ListItem>One artillery piece per player on attack (only one ballista/onager per team) Only one artillery per team is allowed on defense.</ListItem> */}
+                        <ListItem>Attackers may bring 1 Giant ballista and 1 scorpion, defenders may bring 1 scorpion</ListItem>
                         <ListItem>Shotgunning (shooting enemies at close range) artillery is allowed.</ListItem>
                         <ListItem>ONLY scorpions are allowed inside the settlement.</ListItem>
                         <ListItem>NO wall artillery.</ListItem>
@@ -132,7 +133,7 @@ const RulesInfo: React.FC = () => {
                 </ListItem>
                 <Divider my={4} />
                 <ListItem>
-                    <Text fontSize="lg" fontWeight="semibold">Teams consist of two “main” players plus one sub in case one of the “main” players isn`t available. This sub must be registered before the season begins, and they are the only player that may sub for the team throughout the duration of the season.</Text>
+                    <Text fontSize="lg" fontWeight="semibold">Teams consist of three “main” players plus one sub in case one of the “main” players isn`t available. This sub must be registered before the season begins, and they are the only player that may sub for the team throughout the duration of the season.</Text>
                 </ListItem>
                 <Divider my={4} />
                 <ListItem>
@@ -184,24 +185,28 @@ const RulesInfo: React.FC = () => {
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Teams must play at least one and no more than 2 matchups per week. Failure to do so results in a -1pt penalty.</ListItem>
                         <ListItem>Games can be played anytime that teams can arrange. Streaming arrangements can be made with the discord moderators and participating streamers.</ListItem>
-                        <ListItem>Each Group plays a round robin so each team plays all the other teams in their group once.</ListItem>
-                        <ListItem>The top team by points in each group advances to the playoff round.</ListItem>
-                        <ListItem>Playoff position: Group winners will be the 1-8 seeds in order of points. Group runner-ups will be the 9-16 seeds.</ListItem>
+                        {/* <ListItem>Each Group plays a round robin so each team plays all the other teams in their group once.</ListItem> */}
+                        {/* <ListItem>The top team by points in each group advances to the playoff round.</ListItem> */}
+                        <ListItem>Pick phase goes: Att-Def-Def-Att-Def-Att. Attackers start with +3 and defenders with +2. The factions picked must add up to 0 or greater</ListItem>
+                        <ListItem>If you get a capture point and WIN the match, you will get a faction back at random (Wheel spin).</ListItem>
+                        <ListItem>All positive factions on the tier list can be used twice, except torts factions (ROR Syracuse, Sparta and Epirus) which can only be used once. Factions with double use cannot be used in the same matchup, the factions still use them and lose them.</ListItem>
+                        <ListItem>The tournament will be organized in a Double Elimination format. There will be no Group Stage.</ListItem>
+                        <ListItem>In this format in the finals the team which is still on the Winners Bracket will be able to choose to attack or defend first </ListItem>
+                        {/* <ListItem>Playoff position: Group winners will be the 1-8 seeds in order of points. Group runner-ups will be the 9-16 seeds.</ListItem> */}
                         <ListItem>
                             In the event of a tie (pts) between two (or more) teams, the tiebreakers will be as follows:
                             <List styleType="decimal" ml={4}>
-                                <ListItem>Win/Loss</ListItem>
-                                <ListItem>Head to head record (if in the same group)</ListItem>
-                                <ListItem>Total amount of points of factions used against them</ListItem>
-                                <ListItem>Total points of factions used</ListItem>
-                                <ListItem>Coin toss</ListItem>
+                                <ListItem>There's gonna be a pool of 5 maps</ListItem>
+                                <ListItem>The team with the most chevrons on the first 2 games will get to choose whether they want to pick the map or choose Attack/Defense.</ListItem>
+                                <ListItem> If they choose to pick the map, for instance, then the other team chooses Att/Def and vice versa.</ListItem>
+                                <ListItem>The factions picked also must add up to 0 or greater. Factions used on the tie breaker will still count as used for your team, so be careful.</ListItem>
                             </List>
                         </ListItem>
                         <ListItem>A team with NO wins or negative points is ineligible for playoffs.</ListItem>
                     </UnorderedList>
                 </ListItem>
                 <Divider my={4} />
-                <ListItem>
+                {/* <ListItem>
                     <Text fontSize="lg" fontWeight="semibold">Playoff structure:</Text>
                     <UnorderedList mt={1} pl={5}>
                         <ListItem>Only factions which were unused during the Group stage are allowed in the playoffs.</ListItem>
@@ -214,7 +219,7 @@ const RulesInfo: React.FC = () => {
                         <ListItem>Playoff maps will be assigned for each round and can be found on the schedule.</ListItem>
                         <ListItem>Playoff scheduling is final, unless 24hrs notice is given. Failure to attend games at scheduled times results in forfeit.</ListItem>
                     </UnorderedList>
-                </ListItem>
+                </ListItem> */}
                 <Divider my={4} />
                 <ListItem>
                     <Text fontSize="lg" fontWeight="semibold">Points and Penalties:</Text>
