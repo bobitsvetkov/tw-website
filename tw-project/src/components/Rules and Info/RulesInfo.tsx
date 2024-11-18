@@ -197,6 +197,7 @@ const RulesInfo: React.FC = () => {
                             In the event of a tie (pts) between two (or more) teams, the tiebreakers will be as follows:
                             <List styleType="decimal" ml={4}>
                                 <ListItem>There's gonna be a pool of 5 maps</ListItem>
+                                <ListItem>If one team defended with a total of +1 points and the other team defended with a total of 0 points, they both win their defense, the team that went +1 wins the tiebreaker</ListItem>
                                 <ListItem>The team with the most chevrons on the first 2 games will get to choose whether they want to pick the map or choose Attack/Defense.</ListItem>
                                 <ListItem> If they choose to pick the map, for instance, then the other team chooses Att/Def and vice versa.</ListItem>
                                 <ListItem>The factions picked also must add up to 0 or greater. Factions used on the tie breaker will still count as used for your team, so be careful.</ListItem>
