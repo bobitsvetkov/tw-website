@@ -75,8 +75,8 @@ const Streamers: React.FC = () => {
                             boxSize="200px"
                             mx="auto"
                             mb={4}
-                            borderRadius="full" // Rounded image
-                            boxShadow="md" // Image shadow
+                            borderRadius="full"
+                            boxShadow="md"
                         />
                         <Text fontSize="xl" fontWeight="semibold" mb={4}>
                             {streamer.name}

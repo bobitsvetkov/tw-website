@@ -7,10 +7,10 @@ const Champions: React.FC = () => {
         window.scrollTo(0, 0);
     }, []);
     const cardBg = "gray.700"; // Lighter shade of gray for the card
-    const cardColor = "white"; // White text color
+    const cardColor = "white";
     const columns = useBreakpointValue({ base: 1, md: 2, lg: 3 });
     return (
-        <Box bg="gray.900" minHeight="100vh" p={6}>  {/* Darker shade of gray for the background */}
+        <Box bg="gray.900" minHeight="100vh" p={6}>
             <Center mb={6}>
                 <Heading color={cardColor}>Historical Results</Heading>
             </Center>

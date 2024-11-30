@@ -42,8 +42,8 @@ const DLCDetails: React.FC = () => {
             bg="gray.700"
             color="white"
             boxShadow="lg"
-            minHeight="100vh"  // This ensures the content takes up at least the full viewport height
-            display="flex"     // This and the following three lines center the content vertically
+            minHeight="100vh"
+            display="flex"
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
