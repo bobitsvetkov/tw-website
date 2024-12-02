@@ -1,5 +1,5 @@
-import { Box, Heading, Text, List, Flex, Divider, ListItem, Button, Grid, VStack } from "@chakra-ui/react";
-import { FaTrophy, FaCoins, FaFire } from "react-icons/fa";
+import { Box, Heading, Text, Flex, Grid, VStack } from "@chakra-ui/react";
+import { FaTrophy, FaCoins } from "react-icons/fa";
 import { useEffect } from 'react';
 
 const Prizes: React.FC = () => {

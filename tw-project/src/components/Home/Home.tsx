@@ -2,7 +2,9 @@ import { Box, Text, Grid, Icon } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { FaTrophy, FaGamepad, FaArrowCircleRight, FaStore, FaChartLine, FaAward, FaDollarSign, FaDonate, FaBookOpen } from "react-icons/fa";
 import logoImage from "../assets/logoImage.png";
-import Rome from "../assets/Rome.jpg"; // Image for Roman column theme
+import Rome from "../assets/Rome.jpg";
+
+
 
 const sections = [
     { title: "Champions", icon: FaTrophy, text: "Check out the best players", link: "/champions" },
