@@ -1,98 +1,113 @@
-import { Box, Image, Text, Grid, LinkBox, LinkOverlay, Center, Heading } from "@chakra-ui/react";
+import { Box, Icon, Text, Grid, LinkBox, Center, Heading, VStack, Button } from "@chakra-ui/react";
+import { FaTwitch, FaYoutube } from "react-icons/fa"; // Importing both Twitch and YouTube icons
 import { useEffect } from 'react';
+
 const Streamers: React.FC = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    const streamers = [
+
+    const creators = [
+        // Streamers
         {
             name: "MarketableSkills",
-            image: "https://static-cdn.jtvnw.net/jtv_user_pictures/2c0a20e0-c769-4e89-b8fd-69ad86f5547a-profile_image-300x300.png",
+            platform: "twitch",
             description: "Old War-chief, leader of the rebellion. Been slayin would be oppressors since you were suckling at ur mommas teet."
         },
         {
             name: "Capn4is",
-            image: "https://pbs.twimg.com/profile_images/1024555257211146241/5nkcKtJu_400x400.jpg",
+            platform: "twitch",
             description: "Honestly. I'd run as far as you can in the opposite direction if I were you."
         },
         {
-            name: "bobitw",
-            image: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Territory_of_the_First_Bulgarian_Empire_-_9_th_century.png",
-            description: "Hello there. I am an avid Total War player, but I will stream other stuff as well. I might talk a bit about politics/economy/education etc. Still most of my content will probably be focused on Total War."
-        },
-        {
             name: "jamham__",
-            image: "https://static-cdn.jtvnw.net/jtv_user_pictures/7d57fd39-5577-4ae2-badf-71557c5add19-profile_image-70x70.png",
+            platform: "twitch",
             description: "Diving deep into the mechanics of Total War games and sharing my insights."
         },
         {
             name: "bubinni",
-            image: "https://yt3.googleusercontent.com/ILcVSIKD-5TTAbZNqfvm1JJT2ssjPvrW6XQG0S55X7kUhjg58wCzWzvy_pjdMy2wX3lqRxEM=s176-c-k-c0x00ffffff-no-rj",
-            description: "I am the Boobiest-Binni! The Great Khan of the mighty Bubi Horde! Join the ranks of the horde and lay waste to those non-horse-riding posers. CHARGE, MY LANCERS! CHARGE! MAY YOU BE THUNDER AND CHAOS!"
+            platform: "twitch",
+            description: "I am the Boobiest-Binni! The Great Khan of the mighty Bubi Horde! Join the ranks of the horde and lay waste to those non-horse-riding posers."
         },
         {
             name: "bossprophet123",
-            image: "https://yt3.googleusercontent.com/Solcuu4ZuAfaa39E090xSqc8p4D0Ip7nAio_Z7CyZpbbzx8-0GsOISXp5AiYPtAVHL2Ci3VIEQ=s176-c-k-c0x00ffffff-no-rj",
-            description: "Marine Corps Veteran Goin to school for Game development. Join me for great gaming content. I normally play Total war Rome 2 & NCAA 14, but I play multiple different and join me during my gaming marathons and suggest new games for me to try."
+            platform: "twitch",
+            description: "Marine Corps Veteran Goin to school for Game development. Join me for great gaming content."
+        },
+        // YouTubers
+        {
+            name: "@marketableskills5374",
+            platform: "youtube",
+            description: "Welcome to the shit show, ya beautiful misfits :)  Its mostly Rome 2 and the long dark up in here, but look for more content soon!!"
         },
         {
-            name: "arcticgollem",
-            image: "https://static-cdn.jtvnw.net/jtv_user_pictures/5c76b8fc-624c-4d14-9599-afe89085de89-profile_image-70x70.png",
-            description: "20 Years Old looking to play some good old Rome 2!"
+            name: "@capn4is187",
+            platform: "youtube",
+            description: "Honestly. I'd run as far as you can in the opposite direction if I were you."
+        },
+        {
+            name: "@bobitw",
+            platform: "youtube",
+            image: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Territory_of_the_First_Bulgarian_Empire_-_9_th_century.png",
+            description: "Hello there. I am an avid Total War player, but I will stream other stuff as well. I might talk a bit about politics/economy/education etc. Still most of my content will probably be focused on Total War."
+        },
+        {
+            name: "@PixelatedApollo1",
+            platform: "youtube",
+            image: "https://yt3.googleusercontent.com/ytc/AOPolaRO4D4_4HLTEbLpjuYwUpEfsI237-AvnXh2qk5gow=s900-c-k-c0x00ffffff-no-rj",
+            description: "Join with me, to witness some of the greatest battles throughout history.  Not just from our world, but from fantasy worlds like Middle Earth and Elder Scrolls.  Thanks to award winning series Total War, we can go back in time and watch some of the bloodiest battles with our own two eyes!  My name is Pixelated Apollo, and I hope you have your sword sharpened, and your Warhorse rested, because it's time for Battle!! "
         },
     ];
 
     return (
         <Box bg="gray.800" minHeight="100vh" color="white" p={4}>
             <Center mb={6}>
-                <Heading color="white">Meet our Streamers!</Heading>
+                <Heading color="white">Meet our Creators!</Heading>
             </Center>
 
             <Grid
                 templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
                 gap={6}
             >
-                {streamers.map((streamer, index) => (
+                {creators.map((creator, index) => (
                     <LinkBox
                         key={index}
                         as="article"
-                        p={4}
-                        borderRadius="lg"
+                        p={6}
+                        borderRadius="xl"
                         textAlign="center"
                         bg="gray.700"
                         color="white"
                         boxShadow="lg"
                         transition="0.3s"
                         _hover={{
-                            boxShadow: "lg",
+                            boxShadow: "xl",
                             transform: "scale(1.05)",
                             background: 'gray.600',
                         }}
                     >
-                        <Image
-                            src={streamer.image}
-                            alt={streamer.name}
-                            boxSize="200px"
-                            mx="auto"
-                            mb={4}
-                            borderRadius="full"
-                            boxShadow="md"
-                        />
-                        <Text fontSize="xl" fontWeight="semibold" mb={4}>
-                            {streamer.name}
-                        </Text>
-                        <Text fontSize="md" mb={4}>
-                            {streamer.description}
-                        </Text>
-                        <LinkOverlay
-                            href={`https://www.twitch.tv/${streamer.name}`}
-                            isExternal
-                            fontWeight="bold"
-                            color="blue.300"
-                            _hover={{ color: "blue.500", textDecoration: "underline" }}
-                        >
-                            Watch on Twitch
-                        </LinkOverlay>
+                        <VStack spacing={4}>
+                            <Icon
+                                as={creator.platform === "twitch" ? FaTwitch : FaYoutube}
+                                boxSize={16}
+                                color={creator.platform === "twitch" ? "purple.500" : "red.500"}
+                            />
+                            <Text fontSize="2xl" fontWeight="bold">
+                                {creator.name}
+                            </Text>
+                            <Text fontSize="lg" color="gray.300">
+                                {creator.description}
+                            </Text>
+                            <Button
+                                as="a"
+                                href={creator.platform === "twitch" ? `https://www.twitch.tv/${creator.name}` : `https://www.youtube.com/${creator.name}`}
+                                target="_blank"
+                                colorScheme="purple"
+                                size="sm"
+                            >
+                                Visit Channel
+                            </Button>
+                        </VStack>
                     </LinkBox>
                 ))}
             </Grid>
