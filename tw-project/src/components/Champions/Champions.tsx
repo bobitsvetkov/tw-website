@@ -6,7 +6,7 @@ const Champions: React.FC = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    const cardBg = "gray.700"; // Lighter shade of gray for the card
+    const cardBg = "gray.700";
     const cardColor = "white";
     const columns = useBreakpointValue({ base: 1, md: 2, lg: 3 });
     return (
