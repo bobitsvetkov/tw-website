@@ -1,215 +1,118 @@
-import { Box, Image, Text, Grid,} from "@chakra-ui/react";
+import { Box, Text, Grid, Icon } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import logoImage from '../assets/logoImage.png'
-import FactionTierCard from "../Faction Tier List/TierCard";
-import DLCCard from "../DLC/DLCCard";
+import { FaTrophy, FaGamepad, FaArrowCircleRight, FaStore, FaChartLine, FaAward, FaDollarSign, FaDonate, FaBookOpen } from "react-icons/fa";
+import logoImage from "../assets/logoImage.png";
+import Rome from "../assets/Rome.jpg"; // Image for Roman column theme
+
+const sections = [
+    { title: "Champions", icon: FaTrophy, text: "Check out the best players", link: "/champions" },
+    { title: "Streamers", icon: FaGamepad, text: "Meet our Streamers", link: "/streamers" },
+    { title: "Rules and Info", icon: FaArrowCircleRight, text: "Learn the rules and get info", link: "/rules-info" },
+    { title: "Merchandise", icon: FaStore, text: "Get Official Merchandise", link: "https://streamlabs.com/marketableskills/merch", external: true },
+    { title: "TWLS Standings", icon: FaChartLine, text: "Check the current standings", link: "https://docs.google.com/spreadsheets/d/1d3U_wppVKXpeXySeWJTJwtSJnURksYogMb-ktrzuRek/edit#gid=160152427", external: true },
+    { title: "Prizes", icon: FaAward, text: "Discover prizes and awards", link: "/prizes" },
+    { title: "Support Us", icon: FaDollarSign, text: "Support the creator of this website", link: "https://www.paypal.com/paypalme/bobitsv", external: true },
+    { title: "MarketableSkills Support", icon: FaDonate, text: "Support MarketableSkills", link: "https://streamlabs.com/marketableskills/tip", external: true },
+    { title: "Rome 2 Guides", icon: FaBookOpen, text: "Explore helpful guides", link: "/guides" },
+    { title: "Unit Challenges", icon: FaGamepad, text: "Take on exciting challenges", link: "/challenges/units" },
+    { title: "Faction Challenges", icon: FaGamepad, text: "Take on exciting challenges", link: "/challenges/factions" },
+];
+
 const Home: React.FC = () => {
     return (
-        <>
-            <Box w="100%" h="300px" overflow="hidden">
-                <Image src={logoImage} alt="Rome 2 Total War Logo" w="100%" h="100%" objectFit="cover" />
+        <Box
+            minH="100vh"
+            bgImage={`url(${Rome})`}
+            bgSize="cover"
+            bgPosition="center"
+            color="white"
+            position="relative"
+        >
+            {/* Dark Overlay */}
+            <Box
+                position="absolute"
+                top={0}
+                left={0}
+                width="100%"
+                height="100%"
+                bg="rgba(0, 0, 0, 0.5)"
+                zIndex={1}
+            />
+
+            {/* Header with Logo Image and Join Us Button */}
+            <Box
+                w="100%"
+                bg="rgba(0, 0, 0, 0.3)"
+                p={4}
+                display="flex"
+                justifyContent="space-between"
+                alignItems="center"
+                position="relative"
+                zIndex={2}
+            >
+                <Box>
+                    <img src={logoImage} alt="Logo" style={{ width: "150px" }} />
+                </Box>
+                <Box>
+                    <a
+                        href="https://discord.gg/marketableskills-821065002394845275"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            padding: "10px 20px",
+                            backgroundColor: "#6B46C1",
+                            color: "white",
+                            borderRadius: "8px",
+                            fontSize: "16px",
+                            fontWeight: "bold",
+                            textTransform: "uppercase",
+                            textDecoration: "none",
+                            transition: "background-color 0.3s ease, transform 0.3s ease",
+                        }}
+                        onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#553C9A")}
+                        onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#6B46C1")}
+                    >
+                        Join Us!
+                    </a>
+                </Box>
             </Box>
 
-            <Grid
-                templateColumns={{ base: "1fr", md: "repeat(3, 1fr)", lg: "repeat(5, 1fr)" }}
-                gap={6}
-                mt={6}
-            >
-                <Link to="/champions">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://i.pinimg.com/originals/51/59/9e/51599ed60e4974fb4a49447e18a6dc63.jpg" alt="Champions" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Check out best players</Text>
-                    </Box>
-                </Link>
-
-                <Link to="/twitch-streamers">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://cdn.m7g.twitch.tv/ba46b4e5e395b11efd34/assets/uploads/blog_og-image.jpg?w=1200&h=630&fm=jpg&auto=format" alt="Twitch Streamers" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Meet our Twitch streamers</Text>
-                    </Box>
-                </Link>
-
-                <Link to="/rules-info">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://img.freepik.com/premium-vector/rules-people-great-design-any-purposes-flat-vector-illustration-character_123447-3954.jpg" alt="Rules and Info" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Learn the rules and get info</Text>
-                    </Box>
-                </Link>
-
-                <a href="https://streamlabs.com/marketableskills/merch" target="_blank" rel="noopener noreferrer">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://panels.twitch.tv/panel-659960022-image-944d9733-f922-4ed0-96c6-5dcc25da5ad3" alt="Merch" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Get Official Merchandise</Text>
-                    </Box>
-                </a>
-
-                <Link to="/youtubers">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc" alt="Youtubers" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Meet our Youtubers</Text>
-                    </Box>
-                </Link>
-
-                <a href="https://docs.google.com/spreadsheets/d/1d3U_wppVKXpeXySeWJTJwtSJnURksYogMb-ktrzuRek/edit#gid=160152427" target="_blank" rel="noopener noreferrer">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://i.ytimg.com/vi/Kqvff-tWDbI/maxresdefault.jpg" alt="Statistics" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>TWLS Standings</Text>
-                    </Box>
-                </a>
-
-                <a href="https://discord.gg/K9GU6VzrmK" target="_blank" rel="noopener noreferrer">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://images-eds-ssl.xboxlive.com/image?url=Q_rwcVSTCIytJ0KOzcjWTYl.n38D8jlKWXJx7NRJmQKBAEDCgtTAQ0JS02UoaiwRCHTTX1RAopljdoYpOaNfVf5nBNvbwGfyR5n4DAs0DsOwxSO9puiT_GgKqinHT8HsW8VYeiiuU1IG3jY69EhnsQ--&format=source" alt="Community" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Join our Community</Text>
-                    </Box>
-                </a>
-
-                <Link to="/prizes">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://assetsio.reedpopcdn.com/rome-total-war-ii-screenshot.png?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="Prizes" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Prizes and Awards</Text>
-                    </Box>
-                </Link>
-
-                <a href="https://www.paypal.com/paypalme/bobitsv" target="_blank" rel="noopener noreferrer">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://i.chzbgr.com/full/9712976640/h04132010/person-wrote-this-code-only-god-and-understood-did-now-only-god-knows" alt="programmermeme" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Support The Creator Of This Website!</Text>
-                    </Box>
-                </a>
-
-                <a href="https://streamlabs.com/marketableskills/tip" target="_blank" rel="noopener noreferrer">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://yt3.googleusercontent.com/ytc/AOPolaRBeU8n7E1tWnU42r4dfw20GdDaSG4IY3lGyFFg=s900-c-k-c0x00ffffff-no-rj" alt="marketimg" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Support MarketableSkills!</Text>
-                    </Box>
-                </a>
-                <Link to="/guides">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://content.totalwar.com/total-war/com.totalwar.www2019/uploads/2019/03/11103129/carthage-1024x576.jpg" alt="Youtubers" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Rome 2 Guides</Text>
-                    </Box>
-                </Link>
-                <Link to="/challenges">
-                    <Box
-                        p={4}
-                        borderRadius="md"
-                        textAlign="center"
-                        bg="gray.700"
-                        color="white"
-                        boxShadow="lg"
-                        transition="0.3s"
-                        _hover={{ bg: "gray.600" }}
-                    >
-                        <Image src="https://i.imgur.com/C3u4BD0.jpg" alt="Prizes" boxSize="300px" mx="auto" mb={4} />
-                        <Text mt={2}>Challenges</Text>
-                    </Box>
-                </Link>
-                    <FactionTierCard />
-                    <DLCCard />
-
-            </Grid>
-        </>
+            {/* Main Grid Section */}
+            <Box position="relative" zIndex={2}>
+                <Grid
+                    templateColumns={{ base: "1fr", md: "repeat(3, 1fr)", lg: "repeat(4, 1fr)" }}
+                    gap={6}
+                    mt={8}
+                    p={4}
+                    bg="rgba(0, 0, 0, 0.1)"
+                    borderRadius="lg"
+                    boxShadow="md"
+                >
+                    {sections.map((section, index) => (
+                        <Link key={index} to={section.link} target={section.external ? "_blank" : "_self"}>
+                            <Box
+                                p={4}
+                                borderRadius="lg"
+                                textAlign="center"
+                                bg="rgba(50, 50, 50, 0.3)"
+                                _hover={{
+                                    transform: "translateY(-5px)",
+                                    boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
+                                }}
+                                transition="transform 0.3s ease"
+                            >
+                                <Icon as={section.icon} boxSize={14} mb={4} color="purple.300" />
+                                <Text fontSize="lg" fontWeight="bold" mb={2}>
+                                    {section.title}
+                                </Text>
+                                <Text fontSize="sm">{section.text}</Text>
+                            </Box>
+                        </Link>
+                    ))}
+                </Grid>
+            </Box>
+        </Box>
     );
-}
+};
 
 export default Home;
