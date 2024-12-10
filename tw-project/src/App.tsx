@@ -7,6 +7,8 @@ import Prizes from './components/Prize/Prize';
 import VideoCard from './components/Videos/Youtube';
 import FactionChallengesPage from './components/Challenges/FactionChallenges';
 import UnitChallengesPage from './components/Challenges/UnitChallenges';
+import EloRatingList from './components/EloRating/EloRatingList';
+import PlayerRankingList from './components/Player Ranking/PlayerRanking';
 const App: React.FC = () => {
   return (
     <Router>
@@ -15,6 +17,8 @@ const App: React.FC = () => {
         <Route path="/streamers" element={<Streamers />} />
         <Route path="/rules-info" element={<RulesInfo />} />
         <Route path="/champions" element={<Champions />} />
+        <Route path="/elo" element={<EloRatingList />} />
+        <Route path="/ranking" element={<PlayerRankingList />} />
         <Route path="/prizes" element={<Prizes />} />
         <Route path="/guides" element={<VideoCard />} />
         <Route path="/challenges/factions" element={<FactionChallengesPage />} />
