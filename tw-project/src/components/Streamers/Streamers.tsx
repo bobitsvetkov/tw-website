@@ -1,5 +1,5 @@
 import { Box, Icon, Text, Grid, LinkBox, Center, Heading, VStack, Button } from "@chakra-ui/react";
-import { FaTwitch, FaYoutube } from "react-icons/fa"; // Importing both Twitch and YouTube icons
+import { FaTwitch, FaYoutube } from "react-icons/fa";
 import { useEffect } from 'react';
 
 const Streamers: React.FC = () => {
