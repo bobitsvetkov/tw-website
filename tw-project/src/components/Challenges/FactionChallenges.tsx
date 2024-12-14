@@ -78,7 +78,7 @@ const FactionChallengesPage: React.FC = () => {
                             {selectedChallenge.title}
                         </ModalHeader>
                         <ModalCloseButton />
-                        <ModalBody p={6} maxH="80vh" overflowY="auto">
+                        <ModalBody p={1} maxH="80vh" overflowY="auto">
                             {/* Image Section */}
                             <Center mb={6}>
                                 <Image
