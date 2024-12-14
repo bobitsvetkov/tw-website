@@ -1,8 +1,5 @@
 import {
-    Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionPanel,
+    Icon,
     Box,
     Text,
     Image,
@@ -17,12 +14,12 @@ import {
     ModalHeader,
     ModalCloseButton,
     ModalBody,
-    ModalFooter,
+    Divider,
 } from "@chakra-ui/react";
-import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import React, { useState } from "react";
 import factionChallenges from "../../data/factionsData";
 import { FactionChallenges } from "../../common/types";
+import { FaTrophy, FaBacteria, FaBook  } from "react-icons/fa";
 
 const FactionChallengesPage: React.FC = () => {
     const columns = useBreakpointValue({ base: 1, md: 2, lg: 10 }) ?? 1;
@@ -74,132 +71,83 @@ const FactionChallengesPage: React.FC = () => {
                 </Flex>
             ))}
             {selectedChallenge && (
-                <Modal isOpen={true} onClose={closeChallenge}>
+                <Modal isOpen={true} onClose={closeChallenge} size="lg" motionPreset="slideInBottom">
                     <ModalOverlay />
-                    <ModalContent bg="gray.700" color="white">
-                        <ModalHeader textAlign="center">
+                    <ModalContent bg="gray.900" color="white" borderRadius="lg" boxShadow="2xl">
+                        <ModalHeader textAlign="center" fontSize="2xl" fontWeight="extrabold">
                             {selectedChallenge.title}
                         </ModalHeader>
                         <ModalCloseButton />
-                        <ModalBody>
-                            <Center mt={-5}>
+                        <ModalBody p={6} maxH="80vh" overflowY="auto">
+                            {/* Image Section */}
+                            <Center mb={6}>
                                 <Image
                                     src={selectedChallenge.image}
                                     alt={selectedChallenge.title}
-                                    maxW="100px"
-                                    maxH="100px"
+                                    maxW="120px"
+                                    borderRadius="md"
+                                    boxShadow="lg"
+                                    transition="all 0.3s ease-in-out"
+                                    _hover={{ transform: "scale(1.05)" }}
                                 />
                             </Center>
-                            <Accordion allowMultiple>
-                                <AccordionItem mt={4}  borderColor={"rgb(255 255 255 / 16%)"}>
-                                    {({ isExpanded }) => (
-                                        <>
-                                            <AccordionButton>
-                                                <Box flex="1" textAlign="left">
-                                                    Winner
-                                                </Box>
-                                                {isExpanded ? (
-                                                    <MinusIcon fontSize="12px" />
-                                                ) : (
-                                                    <AddIcon fontSize="12px" />
-                                                )}
-                                            </AccordionButton>
-                                            <AccordionPanel pb={4}>
-                                                {isExpanded && <Text>{selectedChallenge.winner}</Text>}
-                                            </AccordionPanel>
-                                        </>
-                                    )}
-                                </AccordionItem>
-                                <AccordionItem borderColor={"rgb(255 255 255 / 16%)"}>
-                                    {({ isExpanded }) => (
-                                        <>
-                                            <AccordionButton>
-                                                <Box flex="1" textAlign="left">
-                                                    Kills
-                                                </Box>
-                                                {isExpanded ? (
-                                                    <MinusIcon fontSize="12px" />
-                                                ) : (
-                                                    <AddIcon fontSize="12px" />
-                                                )}
-                                            </AccordionButton>
-                                            <AccordionPanel pb={4}>
-                                                {isExpanded && <Text>{selectedChallenge.kills}</Text>}
-                                            </AccordionPanel>
-                                        </>
-                                    )}
-                                </AccordionItem>
-                                <AccordionItem borderColor={"rgb(255 255 255 / 16%)"}>
-                                    {({ isExpanded }) => (
-                                        <>
-                                            <AccordionButton>
-                                                <Box flex="1" textAlign="left">
-                                                    Chevrons
-                                                </Box>
-                                                {isExpanded ? (
-                                                    <MinusIcon fontSize="12px" />
-                                                ) : (
-                                                    <AddIcon fontSize="12px" />
-                                                )}
-                                            </AccordionButton>
-                                            <AccordionPanel pb={4}>
-                                                {isExpanded && (
-                                                    <Text>{selectedChallenge.chevrons}</Text>
-                                                )}
-                                            </AccordionPanel>
-                                        </>
-                                    )}
-                                </AccordionItem>
-                                <AccordionItem borderColor={"rgb(255 255 255 / 16%)"}>
-                                    {({ isExpanded }) => (
-                                        <>
-                                            <AccordionButton>
-                                                <Box flex="1" textAlign="left">
-                                                    Description
-                                                </Box>
-                                                {isExpanded ? (
-                                                    <MinusIcon fontSize="12px" />
-                                                ) : (
-                                                    <AddIcon fontSize="12px" />
-                                                )}
-                                            </AccordionButton>
-                                            <AccordionPanel pb={4}>
-                                                {isExpanded && (
-                                                    <Text>{selectedChallenge.description}</Text>
-                                                )}
-                                            </AccordionPanel>
-                                        </>
-                                    )}
-                                </AccordionItem>
-                                <AccordionItem borderColor={"rgb(255 255 255 / 16%)"}>
-                                    {({ isExpanded }) => (
-                                        <>
-                                            <AccordionButton>
-                                                <Box flex="1" textAlign="left">
-                                                    Past Challengers
-                                                </Box>
-                                                {isExpanded ? (
-                                                    <MinusIcon fontSize="12px" />
-                                                ) : (
-                                                    <AddIcon fontSize="12px" />
-                                                )}
-                                            </AccordionButton>
-                                            <AccordionPanel pb={4}>
-                                                {isExpanded && (
-                                                    <Text>{selectedChallenge.historicalRecord}</Text>
-                                                )}
-                                            </AccordionPanel>
-                                        </>
-                                    )}
-                                </AccordionItem>
-                            </Accordion>
+                            {/* Winner Section */}
+                            <Box mb={4} p={4} bg="gray.800" borderRadius="md" boxShadow="sm">
+                                <Flex align="center">
+                                    <Icon as={FaTrophy} boxSize={6} color="yellow.400" mr={3} />
+                                    <Text fontSize="lg" fontWeight="bold" color="yellow.400">
+                                        Winner
+                                    </Text>
+                                </Flex>
+                                <Text mt={2}>{selectedChallenge.winner}</Text>
+                            </Box>
+                            <Divider my={4} borderColor="gray.600" />
+                            {/* Statistics Section */}
+                            <Box mb={4} p={4} bg="gray.800" borderRadius="md" boxShadow="sm">
+                                <Flex align="center">
+                                    <Icon as={FaBacteria} boxSize={6} color="blue.400" mr={3} />
+                                    <Text fontSize="lg" fontWeight="bold" color="blue.400">
+                                        Statistics
+                                    </Text>
+                                </Flex>
+                                <Text mt={2}>Kills: {selectedChallenge.kills}</Text>
+                                <Text>Chevrons: {selectedChallenge.chevrons}</Text>
+                            </Box>
+                            <Divider my={4} borderColor="gray.600" />
+                            {/* Description Section */}
+                            <Box mb={4} p={4} bg="gray.800" borderRadius="md" boxShadow="sm">
+                                <Flex align="center">
+                                    <Icon as={FaBook} boxSize={6} color="purple.400" mr={3} />
+                                    <Text fontSize="lg" fontWeight="bold" color="purple.400">
+                                        Description
+                                    </Text>
+                                </Flex>
+                                <Text mt={2}>{selectedChallenge.description}</Text>
+                            </Box>
+                            <Divider my={4} borderColor="gray.600" />
+                            {/* Historical Record Section */}
+                            <Box mb={4} p={4} bg="gray.800" borderRadius="md" boxShadow="sm">
+                                <Flex align="center">
+                                    <Icon as={FaTrophy} boxSize={6} color="orange.400" mr={3} />
+                                    <Text fontSize="lg" fontWeight="bold" color="orange.400">
+                                        Past Challengers
+                                    </Text>
+                                </Flex>
+                                <Text mt={2}>{selectedChallenge.historicalRecord}</Text>
+                            </Box>
+                            <Divider my={4} borderColor="gray.600" />
+                            {/* Screenshot Link Section */}
                             <Center mt={4}>
-                                <Link href={selectedChallenge.screenshotLink} isExternal>
-                                    Screenshot Link
+                                <Link
+                                    href={selectedChallenge.screenshotLink}
+                                    isExternal
+                                    fontSize="lg"
+                                    color="teal.300"
+                                >
+                                    View Screenshot
                                 </Link>
                             </Center>
                         </ModalBody>
-                        <ModalFooter></ModalFooter>
                     </ModalContent>
                 </Modal>
             )}
