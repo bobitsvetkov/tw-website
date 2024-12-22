@@ -23,14 +23,14 @@ interface Player {
     Player: string;
     "K_D_ratio": number;
     "Chevrons_game": number;
-    "Total Chevrons": number;
-    "Total Kills": string;
-    "Total Losses": string;
+    "Total_Chevrons": number;
+    "Total_Kills": number;
+    "Total_Losses": string;
     "Kills per Game": string;
     "Losses per Game": string;
     "Games_Played": number;
-    "Games Won": number;
-    "Games Lost": number;
+    "Games_Won": number;
+    "Games_Lost": number;
     "Win_Percent": number;
     "DC's/Forfeits": number;
     "Seasons Played": number;
@@ -61,25 +61,19 @@ const PlayerRankingList: React.FC = () => {
     });
 
     const calculatePlayerRating = (player: Player): number => {
-        const baseRating = 1000.0;
         const gamesPlayed = player["Games_Played"] || 0;
         const winPercentage = Number(player["Win_Percent"] || "0") * 100;
         const playoffRate = (parseFloat(player["Playoff_Rate"]) || 0) * 100;
-        const kdRatio = player["K_D_ratio"] || 0;
-        const chevronsPerGame = player["Chevrons_game"] || 0;
         const thirdPlace = player["Third_Places"] || 0;
         const secondPlace = player["Runner-ups"] || 0;
         const championships = player["Championships"] || 0;
 
         let rating =
-            baseRating +
-            winPercentage * 10 +
-            kdRatio * 10 +
-            chevronsPerGame * 10 +
-            thirdPlace * 30 +
-            secondPlace * 50 +
-            championships * 100 +
-            playoffRate * 10;
+            winPercentage * 5 +
+            thirdPlace * 50 +
+            secondPlace * 70 +
+            championships * 150 +
+            playoffRate * 3
 
         if (gamesPlayed < 21) {
             rating *= 0.01;
@@ -152,13 +146,19 @@ const PlayerRankingList: React.FC = () => {
 
     return (
         <Box p={6} bg="gray.900" minHeight="100vh" color="white">
-            <Center mb={8}>
-                <Heading size="2xl" bgGradient="linear(to-r, blue.400, purple.500)" bgClip="text">
+            <Center mb={4} w="full" px={4}>
+                <Heading
+                    size="2xl"
+                    bgGradient="linear(to-r, blue.400, purple.500)"
+                    bgClip="text"
+                    fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+                    lineHeight="base"
+                >
                     Player Rankings
                 </Heading>
             </Center>
 
-            <Center mb={4}>
+            <Center mb={7}>
                 <InputGroup maxWidth="400px">
                     <Input
                         placeholder="Search for a player"
