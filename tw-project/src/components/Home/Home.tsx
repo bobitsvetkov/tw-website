@@ -30,6 +30,7 @@ const Home: React.FC = () => {
             bgPosition="center"
             color="white"
             position="relative"
+            minHeight="100vh"
         >
             {/* Dark Overlay */}
             <Box
