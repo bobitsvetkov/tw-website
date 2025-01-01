@@ -13,16 +13,16 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/streamers" element={<Streamers />} />
-        <Route path="/rules-info" element={<RulesInfo />} />
-        <Route path="/champions" element={<Champions />} />
-        <Route path="/elo" element={<EloRatingList />} />
-        <Route path="/ranking" element={<PlayerRankingList />} />
-        <Route path="/prizes" element={<Prizes />} />
-        <Route path="/guides" element={<VideoCard />} />
-        <Route path="/challenges/factions" element={<FactionChallengesPage />} />
-        <Route path="/challenges/units" element={< UnitChallengesPage />} />
+        <Route path="/" element = {<Home />} />
+        <Route path="/streamers" element = {<Streamers />} />
+        <Route path="/rules-info" element = {<RulesInfo />} />
+        <Route path="/champions" element = {<Champions />} />
+        <Route path="/elo" element = {<EloRatingList />} />
+        <Route path="/ranking" element = {<PlayerRankingList />} />
+        <Route path="/prizes" element = {<Prizes />} />
+        <Route path="/guides" element = {<VideoCard />} />
+        <Route path="/challenges/factions" element = {<FactionChallengesPage />} />
+        <Route path="/challenges/units" element = {< UnitChallengesPage />} />
       </Routes>
     </Router>
   );
